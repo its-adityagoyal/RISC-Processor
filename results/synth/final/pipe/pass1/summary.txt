@@ -1,0 +1,1 @@
+SYNTH top=Pipelined_processor period=10.000 wns=0.188 slack_rr=0.188 slack_rf=1.310 slack_fr=2.720 slack_ff= tmin=9.812 fmax_mhz=101.9 critical=rise-rise luts=1288 ffs=1028 lutram=128 bram=0

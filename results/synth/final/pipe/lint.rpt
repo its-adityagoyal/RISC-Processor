@@ -1,0 +1,16 @@
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'Cout' was assigned but not read. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'DRselect_D' was assigned but not read. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'load_in_M' was assigned but not read. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'overflowFlag_E' was assigned but not read. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'zeroFlag_E' was assigned but not read. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'clk' are not read. First unread bit index is 0. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'pc_f' are not read. First unread bit index is 0. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'reset' are not read. First unread bit index is 0. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'upd_is_cond' are not read. First unread bit index is 0. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'upd_is_jump' are not read. First unread bit index is 0. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'upd_pc' are not read. First unread bit index is 0. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'upd_pht_idx' are not read. First unread bit index is 0. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'upd_taken' are not read. First unread bit index is 0. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'upd_target' are not read. First unread bit index is 0. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'upd_valid' are not read. First unread bit index is 0. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'clk' are not read. First unread bit index is 0. 

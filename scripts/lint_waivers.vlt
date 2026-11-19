@@ -1,0 +1,39 @@
+`verilator_config
+// Lint waivers for -Wall. Every entry is a reviewed, intentional construct.
+// Anything not listed here must be fixed, not waived.
+// (Never start a comment with the tool name: that makes it a metacomment.)
+
+// Some module files hold helper modules next to the main one
+// (MUX_2to1 and MUX32_2to1, half and full adder and RCA_32bit, ALU_unit in ALU.v)
+// and ooo_dmem lives with its only user.
+lint_off -rule DECLFILENAME -file "*/MUX.v"
+lint_off -rule DECLFILENAME -file "*/ripple_carry_adder.v"
+lint_off -rule DECLFILENAME -file "*/ALU.v"
+lint_off -rule DECLFILENAME -file "*/ooo_processor.v"
+
+// control_unit lists the full funct table as documentation, decode only needs F_CMOV.
+lint_off -rule UNUSEDPARAM -file "*/control_unit.v"
+
+// ham_unit accumulates 1-bit values into a 32-bit count (intended widening).
+lint_off -rule WIDTHEXPAND -file "*/ham_unit.v"
+
+// Status outputs that the ISA never consumes (there is no flags register).
+lint_off -rule UNUSEDSIGNAL -file "*/ALU.v" -match "*Cout*"
+lint_off -rule UNUSEDSIGNAL -file "*/Pipelined_processor.v" -match "*zeroFlag_E*"
+lint_off -rule UNUSEDSIGNAL -file "*/Pipelined_processor.v" -match "*overflowFlag_E*"
+lint_off -rule UNUSEDSIGNAL -file "*/Pipelined_processor.v" -match "*DRselect_D*"
+lint_off -rule UNUSEDSIGNAL -file "*/ooo_processor.v" -match "*alu_zero*"
+lint_off -rule UNUSEDSIGNAL -file "*/ooo_processor.v" -match "*alu_ovf*"
+lint_off -rule UNUSEDSIGNAL -file "*/RISCV_processor.v" -match "*zeroFlag*"
+lint_off -rule UNUSEDSIGNAL -file "*/RISCV_processor.v" -match "*overflowFlag*"
+lint_off -rule UNUSEDSIGNAL -file "*/RISCV_processor.v" -match "*DRselect*"
+
+// The instruction ROM is asynchronous. clk stays on the port for a future
+// synchronous (BRAM) version.
+lint_off -rule UNUSEDSIGNAL -file "*/instruction_memory.v" -match "*clk*"
+
+// With MODE 0 (no prediction) the predictor inputs are intentionally idle.
+lint_off -rule UNUSEDSIGNAL -file "*/branch_predictor.v"
+
+// Simulation-only invariant bits, consumed by testbench/ooo_sva.sv.
+lint_off -rule UNUSEDSIGNAL -file "*/ooo_processor.v" -match "*dbg_*"

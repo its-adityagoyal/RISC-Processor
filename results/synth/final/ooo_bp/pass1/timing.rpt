@@ -1,0 +1,2133 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun Nov 15 03:56:51 2026
+| Host         : Aditya running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file {results/synth/final/ooo_bp/pass1/timing.rpt}
+| Design       : ooo_processor
+| Device       : 7k70t-fbv676
+| Speed File   : -1  PRODUCTION 1.12 2017-02-17
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (1)
+6. checking no_output_delay (138)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (1)
+------------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (138)
+---------------------------------
+ There are 138 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+    -16.868   -38819.750                   5241                 9233        0.061        0.000                      0                 9233        4.090        0.000                       0                  3761  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+clk    {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk               -16.868   -38819.750                   5241                 9233        0.061        0.000                      0                 9233        4.090        0.000                       0                  3761  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :         5241  Failing Endpoints,  Worst Slack      -16.868ns,  Total Violation   -38819.751ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.061ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.090ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -16.868ns  (required time - arrival time)
+  Source:                 head_reg[0]_rep__4/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rs_v2_reg[6][25]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        26.617ns  (logic 3.535ns (13.281%)  route 23.082ns (86.719%))
+  Logic Levels:           50  (CARRY4=2 LUT1=1 LUT2=2 LUT3=1 LUT4=5 LUT5=2 LUT6=36 RAMD32=1)
+  Clock Path Skew:        -0.289ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.289ns = ( 11.289 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.010ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         1.588     1.588    clk
+    SLICE_X23Y32         FDRE                                         r  head_reg[0]_rep__4/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y32         FDRE (Prop_fdre_C_Q)         0.269     1.857 r  head_reg[0]_rep__4/Q
+                         net (fo=100, routed)         0.826     2.683    MEM/head_reg[2]_rep__1_0
+    SLICE_X20Y32         LUT4 (Prop_lut4_I2_O)        0.053     2.736 r  MEM/rs_valid[1]_i_19/O
+                         net (fo=4, routed)           0.596     3.332    MEM/rs_valid[1]_i_19_n_0
+    SLICE_X19Y33         LUT6 (Prop_lut6_I4_O)        0.053     3.385 f  MEM/rs_insn_reg_r1_0_7_6_11_i_158/O
+                         net (fo=1, routed)           0.417     3.802    MEM/rs_insn_reg_r1_0_7_6_11_i_158_n_0
+    SLICE_X18Y32         LUT6 (Prop_lut6_I0_O)        0.053     3.855 f  MEM/rs_insn_reg_r1_0_7_6_11_i_101/O
+                         net (fo=1, routed)           0.562     4.417    MEM/rs_insn_reg_r1_0_7_6_11_i_101_n_0
+    SLICE_X21Y32         LUT6 (Prop_lut6_I1_O)        0.053     4.470 r  MEM/rs_insn_reg_r1_0_7_6_11_i_67/O
+                         net (fo=12, routed)          0.453     4.923    MEM/rs_insn_reg_r1_0_7_6_11_i_67_n_0
+    SLICE_X19Y32         LUT6 (Prop_lut6_I4_O)        0.053     4.976 r  MEM/rs_valid[1]_i_6/O
+                         net (fo=1, routed)           0.544     5.520    MEM/rs_valid[1]_i_6_n_0
+    SLICE_X17Y32         LUT6 (Prop_lut6_I1_O)        0.053     5.573 r  MEM/rs_valid[1]_i_4/O
+                         net (fo=17, routed)          0.400     5.974    MEM/rs_tag_reg[0][0]
+    SLICE_X17Y33         LUT6 (Prop_lut6_I3_O)        0.053     6.027 f  MEM/rs_insn_reg_r1_0_7_6_11_i_42/O
+                         net (fo=1, routed)           0.442     6.469    MEM/rs_insn_reg_r1_0_7_6_11_i_42_n_0
+    SLICE_X16Y33         LUT6 (Prop_lut6_I4_O)        0.053     6.522 r  MEM/rs_insn_reg_r1_0_7_6_11_i_19/O
+                         net (fo=15, routed)          0.513     7.035    MEM/rs_is_ld_reg[2]
+    SLICE_X16Y35         LUT6 (Prop_lut6_I4_O)        0.053     7.088 r  MEM/rs_valid[6]_i_22/O
+                         net (fo=2, routed)           0.479     7.567    MEM/rs_valid[6]_i_22_n_0
+    SLICE_X16Y35         LUT6 (Prop_lut6_I0_O)        0.053     7.620 r  MEM/rs_insn_reg_r1_0_7_6_11_i_185/O
+                         net (fo=6, routed)           0.353     7.973    MEM/rs_insn_reg_r1_0_7_6_11_i_185_n_0
+    SLICE_X18Y34         LUT6 (Prop_lut6_I3_O)        0.053     8.026 r  MEM/rs_insn_reg_r1_0_7_6_11_i_124/O
+                         net (fo=1, routed)           0.557     8.583    MEM/rs_insn_reg_r1_0_7_6_11_i_124_n_0
+    SLICE_X16Y34         LUT6 (Prop_lut6_I1_O)        0.053     8.636 r  MEM/rs_insn_reg_r1_0_7_6_11_i_85/O
+                         net (fo=1, routed)           0.462     9.098    MEM/rs_insn_reg_r1_0_7_6_11_i_85_n_0
+    SLICE_X20Y35         LUT6 (Prop_lut6_I3_O)        0.053     9.151 f  MEM/rs_insn_reg_r1_0_7_6_11_i_59/O
+                         net (fo=1, routed)           0.412     9.563    MEM/rs_insn_reg_r1_0_7_6_11_i_59_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I0_O)        0.053     9.616 r  MEM/rs_insn_reg_r1_0_7_6_11_i_30/O
+                         net (fo=1, routed)           0.456    10.072    MEM/rs_insn_reg_r1_0_7_6_11_i_30_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I3_O)        0.053    10.125 r  MEM/rs_insn_reg_r1_0_7_6_11_i_17/O
+                         net (fo=11, routed)          0.459    10.584    MEM/rs_is_ld_reg[5]
+    SLICE_X24Y34         LUT3 (Prop_lut3_I1_O)        0.053    10.637 f  MEM/rs_valid[5]_i_13/O
+                         net (fo=5, routed)           0.252    10.889    MEM/rs_valid[5]_i_13_n_0
+    SLICE_X25Y34         LUT2 (Prop_lut2_I1_O)        0.053    10.942 r  MEM/rs_valid[6]_i_6/O
+                         net (fo=1, routed)           0.443    11.385    MEM/rs_valid[6]_i_6_n_0
+    SLICE_X26Y34         LUT6 (Prop_lut6_I2_O)        0.053    11.438 r  MEM/rs_valid[6]_i_2/O
+                         net (fo=7, routed)           0.459    11.897    MEM/rs_tag_reg[6][3]_0
+    SLICE_X27Y34         LUT4 (Prop_lut4_I2_O)        0.053    11.950 r  MEM/rs_valid[5]_i_8/O
+                         net (fo=1, routed)           0.306    12.255    MEM/rs_valid[5]_i_8_n_0
+    SLICE_X27Y34         LUT6 (Prop_lut6_I2_O)        0.053    12.308 r  MEM/rs_valid[5]_i_2/O
+                         net (fo=8, routed)           0.432    12.740    MEM/rs_tag_reg[7][3]
+    SLICE_X31Y33         LUT4 (Prop_lut4_I3_O)        0.053    12.793 f  MEM/rs_insn_reg_r1_0_7_6_11_i_9/O
+                         net (fo=51, routed)          0.469    13.262    MEM_n_1150
+    SLICE_X36Y33         LUT1 (Prop_lut1_I0_O)        0.053    13.315 r  rs_insn_reg_r1_0_7_6_11_i_2/O
+                         net (fo=6, routed)           0.500    13.815    rs_insn_reg_r1_0_7_6_11/ADDRB2
+    SLICE_X38Y32         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.067    13.882 r  rs_insn_reg_r1_0_7_6_11/RAMB/O
+                         net (fo=2, routed)           0.565    14.446    MEM/DI[0]
+    SLICE_X35Y30         LUT4 (Prop_lut4_I3_O)        0.172    14.618 r  MEM/rob_st_addr[0][3]_i_5/O
+                         net (fo=1, routed)           0.000    14.618    MEM/rob_st_addr[0][3]_i_5_n_0
+    SLICE_X35Y30         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.313    14.931 r  MEM/rob_st_addr_reg[0][3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.931    MEM/rob_st_addr_reg[0][3]_i_1_n_0
+    SLICE_X35Y31         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.187    15.118 r  MEM/rob_st_addr_reg[0][7]_i_2/O[3]
+                         net (fo=71, routed)          0.508    15.627    MEM/raddr[7]
+    SLICE_X34Y32         LUT6 (Prop_lut6_I0_O)        0.142    15.769 r  MEM/rs_v1[1][30]_i_135/O
+                         net (fo=1, routed)           0.505    16.274    MEM/rs_v1[1][30]_i_135_n_0
+    SLICE_X33Y32         LUT4 (Prop_lut4_I3_O)        0.053    16.327 r  MEM/rs_v1[1][30]_i_103/O
+                         net (fo=1, routed)           0.228    16.555    MEM/rs_v1[1][30]_i_103_n_0
+    SLICE_X33Y33         LUT6 (Prop_lut6_I3_O)        0.053    16.608 r  MEM/rs_v1[1][30]_i_69/O
+                         net (fo=41, routed)          0.464    17.072    MEM/rs_v1[1][30]_i_69_n_0
+    SLICE_X28Y34         LUT6 (Prop_lut6_I1_O)        0.053    17.125 f  MEM/rs_v1[1][30]_i_101/O
+                         net (fo=2, routed)           0.453    17.579    MEM/rs_v1[1][30]_i_101_n_0
+    SLICE_X30Y33         LUT6 (Prop_lut6_I5_O)        0.053    17.632 r  MEM/rs_v1[1][30]_i_65/O
+                         net (fo=36, routed)          0.613    18.245    MEM/rs_v1[1][30]_i_65_n_0
+    SLICE_X33Y35         LUT6 (Prop_lut6_I4_O)        0.053    18.298 f  MEM/rs_v1[1][31]_i_221/O
+                         net (fo=2, routed)           0.460    18.758    MEM/rs_v1[1][31]_i_221_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I3_O)        0.053    18.811 f  MEM/rs_v1[1][31]_i_177/O
+                         net (fo=6, routed)           0.427    19.238    MEM/rs_v1[1][31]_i_177_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I0_O)        0.053    19.291 r  MEM/rs_v1[1][31]_i_117/O
+                         net (fo=2, routed)           0.237    19.528    MEM/rs_v1[1][31]_i_117_n_0
+    SLICE_X31Y36         LUT6 (Prop_lut6_I5_O)        0.053    19.581 r  MEM/rs_v1[1][31]_i_68/O
+                         net (fo=43, routed)          0.286    19.867    MEM/rs_v1[1][31]_i_68_n_0
+    SLICE_X32Y36         LUT6 (Prop_lut6_I1_O)        0.053    19.920 r  MEM/rs_v1[1][31]_i_119/O
+                         net (fo=1, routed)           0.448    20.369    MEM/rs_v1[1][31]_i_119_n_0
+    SLICE_X33Y37         LUT6 (Prop_lut6_I1_O)        0.053    20.422 r  MEM/rs_v1[1][31]_i_69/O
+                         net (fo=45, routed)          0.491    20.912    MEM/rs_v1[1][31]_i_69_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    20.965 r  MEM/rs_v1[1][31]_i_125/O
+                         net (fo=3, routed)           0.608    21.573    MEM/rs_v1[1][31]_i_125_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I1_O)        0.053    21.626 r  MEM/rs_v1[1][31]_i_70/O
+                         net (fo=36, routed)          0.174    21.800    MEM/rs_v1[1][31]_i_70_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    21.853 f  MEM/rs_v1[1][31]_i_101/O
+                         net (fo=3, routed)           0.816    22.670    MEM/rs_v1[1][31]_i_101_n_0
+    SLICE_X37Y36         LUT6 (Prop_lut6_I0_O)        0.053    22.723 r  MEM/rs_v1[1][31]_i_66/O
+                         net (fo=77, routed)          0.416    23.139    MEM/rs_v1[1][31]_i_66_n_0
+    SLICE_X37Y37         LUT2 (Prop_lut2_I1_O)        0.053    23.192 r  MEM/rs_v1[1][31]_i_100/O
+                         net (fo=2, routed)           0.522    23.715    MEM/rs_v1[1][31]_i_100_n_0
+    SLICE_X36Y36         LUT6 (Prop_lut6_I5_O)        0.053    23.768 r  MEM/rs_v1[1][31]_i_65/O
+                         net (fo=74, routed)          0.376    24.143    MEM/rs_v1[1][31]_i_65_n_0
+    SLICE_X39Y35         LUT6 (Prop_lut6_I4_O)        0.053    24.196 r  MEM/rs_v1[1][31]_i_108/O
+                         net (fo=1, routed)           0.546    24.742    MEM/rs_v1[1][31]_i_108_n_0
+    SLICE_X39Y36         LUT6 (Prop_lut6_I1_O)        0.053    24.795 r  MEM/rs_v1[1][31]_i_67/O
+                         net (fo=70, routed)          0.438    25.233    MEM/rs_v1[1][31]_i_67_n_0
+    SLICE_X40Y37         LUT5 (Prop_lut5_I3_O)        0.053    25.286 f  MEM/rs_v1[1][31]_i_75/O
+                         net (fo=1, routed)           0.563    25.849    MEM/rs_v1[1][31]_i_75_n_0
+    SLICE_X40Y38         LUT6 (Prop_lut6_I3_O)        0.053    25.902 r  MEM/rs_v1[1][31]_i_37/O
+                         net (fo=37, routed)          0.834    26.736    MEM/rs_v1[1][31]_i_37_n_0
+    SLICE_X33Y42         LUT6 (Prop_lut6_I4_O)        0.053    26.789 r  MEM/rs_v1[1][25]_i_8/O
+                         net (fo=14, routed)          0.443    27.233    MEM/rs_v1[1][25]_i_8_n_0
+    SLICE_X30Y48         LUT5 (Prop_lut5_I4_O)        0.053    27.286 r  MEM/rs_v2[6][25]_i_2/O
+                         net (fo=1, routed)           0.866    28.152    MEM/rs_v2[6][25]_i_2_n_0
+    SLICE_X20Y56         LUT6 (Prop_lut6_I5_O)        0.053    28.205 r  MEM/rs_v2[6][25]_i_1/O
+                         net (fo=1, routed)           0.000    28.205    MEM_n_411
+    SLICE_X20Y56         FDRE                                         r  rs_v2_reg[6][25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=3760, unset)         1.289    11.289    clk
+    SLICE_X20Y56         FDRE                                         r  rs_v2_reg[6][25]/C
+                         clock pessimism              0.010    11.299    
+                         clock uncertainty           -0.035    11.264    
+    SLICE_X20Y56         FDRE (Setup_fdre_C_D)        0.073    11.337    rs_v2_reg[6][25]
+  -------------------------------------------------------------------
+                         required time                         11.337    
+                         arrival time                         -28.205    
+  -------------------------------------------------------------------
+                         slack                                -16.868    
+
+Slack (VIOLATED) :        -16.864ns  (required time - arrival time)
+  Source:                 head_reg[0]_rep__4/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rs_v2_reg[6][31]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        26.576ns  (logic 3.535ns (13.301%)  route 23.041ns (86.699%))
+  Logic Levels:           50  (CARRY4=2 LUT1=1 LUT2=2 LUT3=1 LUT4=5 LUT5=2 LUT6=36 RAMD32=1)
+  Clock Path Skew:        -0.287ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.291ns = ( 11.291 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.010ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         1.588     1.588    clk
+    SLICE_X23Y32         FDRE                                         r  head_reg[0]_rep__4/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y32         FDRE (Prop_fdre_C_Q)         0.269     1.857 r  head_reg[0]_rep__4/Q
+                         net (fo=100, routed)         0.826     2.683    MEM/head_reg[2]_rep__1_0
+    SLICE_X20Y32         LUT4 (Prop_lut4_I2_O)        0.053     2.736 r  MEM/rs_valid[1]_i_19/O
+                         net (fo=4, routed)           0.596     3.332    MEM/rs_valid[1]_i_19_n_0
+    SLICE_X19Y33         LUT6 (Prop_lut6_I4_O)        0.053     3.385 f  MEM/rs_insn_reg_r1_0_7_6_11_i_158/O
+                         net (fo=1, routed)           0.417     3.802    MEM/rs_insn_reg_r1_0_7_6_11_i_158_n_0
+    SLICE_X18Y32         LUT6 (Prop_lut6_I0_O)        0.053     3.855 f  MEM/rs_insn_reg_r1_0_7_6_11_i_101/O
+                         net (fo=1, routed)           0.562     4.417    MEM/rs_insn_reg_r1_0_7_6_11_i_101_n_0
+    SLICE_X21Y32         LUT6 (Prop_lut6_I1_O)        0.053     4.470 r  MEM/rs_insn_reg_r1_0_7_6_11_i_67/O
+                         net (fo=12, routed)          0.453     4.923    MEM/rs_insn_reg_r1_0_7_6_11_i_67_n_0
+    SLICE_X19Y32         LUT6 (Prop_lut6_I4_O)        0.053     4.976 r  MEM/rs_valid[1]_i_6/O
+                         net (fo=1, routed)           0.544     5.520    MEM/rs_valid[1]_i_6_n_0
+    SLICE_X17Y32         LUT6 (Prop_lut6_I1_O)        0.053     5.573 r  MEM/rs_valid[1]_i_4/O
+                         net (fo=17, routed)          0.400     5.974    MEM/rs_tag_reg[0][0]
+    SLICE_X17Y33         LUT6 (Prop_lut6_I3_O)        0.053     6.027 f  MEM/rs_insn_reg_r1_0_7_6_11_i_42/O
+                         net (fo=1, routed)           0.442     6.469    MEM/rs_insn_reg_r1_0_7_6_11_i_42_n_0
+    SLICE_X16Y33         LUT6 (Prop_lut6_I4_O)        0.053     6.522 r  MEM/rs_insn_reg_r1_0_7_6_11_i_19/O
+                         net (fo=15, routed)          0.513     7.035    MEM/rs_is_ld_reg[2]
+    SLICE_X16Y35         LUT6 (Prop_lut6_I4_O)        0.053     7.088 r  MEM/rs_valid[6]_i_22/O
+                         net (fo=2, routed)           0.479     7.567    MEM/rs_valid[6]_i_22_n_0
+    SLICE_X16Y35         LUT6 (Prop_lut6_I0_O)        0.053     7.620 r  MEM/rs_insn_reg_r1_0_7_6_11_i_185/O
+                         net (fo=6, routed)           0.353     7.973    MEM/rs_insn_reg_r1_0_7_6_11_i_185_n_0
+    SLICE_X18Y34         LUT6 (Prop_lut6_I3_O)        0.053     8.026 r  MEM/rs_insn_reg_r1_0_7_6_11_i_124/O
+                         net (fo=1, routed)           0.557     8.583    MEM/rs_insn_reg_r1_0_7_6_11_i_124_n_0
+    SLICE_X16Y34         LUT6 (Prop_lut6_I1_O)        0.053     8.636 r  MEM/rs_insn_reg_r1_0_7_6_11_i_85/O
+                         net (fo=1, routed)           0.462     9.098    MEM/rs_insn_reg_r1_0_7_6_11_i_85_n_0
+    SLICE_X20Y35         LUT6 (Prop_lut6_I3_O)        0.053     9.151 f  MEM/rs_insn_reg_r1_0_7_6_11_i_59/O
+                         net (fo=1, routed)           0.412     9.563    MEM/rs_insn_reg_r1_0_7_6_11_i_59_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I0_O)        0.053     9.616 r  MEM/rs_insn_reg_r1_0_7_6_11_i_30/O
+                         net (fo=1, routed)           0.456    10.072    MEM/rs_insn_reg_r1_0_7_6_11_i_30_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I3_O)        0.053    10.125 r  MEM/rs_insn_reg_r1_0_7_6_11_i_17/O
+                         net (fo=11, routed)          0.459    10.584    MEM/rs_is_ld_reg[5]
+    SLICE_X24Y34         LUT3 (Prop_lut3_I1_O)        0.053    10.637 f  MEM/rs_valid[5]_i_13/O
+                         net (fo=5, routed)           0.252    10.889    MEM/rs_valid[5]_i_13_n_0
+    SLICE_X25Y34         LUT2 (Prop_lut2_I1_O)        0.053    10.942 r  MEM/rs_valid[6]_i_6/O
+                         net (fo=1, routed)           0.443    11.385    MEM/rs_valid[6]_i_6_n_0
+    SLICE_X26Y34         LUT6 (Prop_lut6_I2_O)        0.053    11.438 r  MEM/rs_valid[6]_i_2/O
+                         net (fo=7, routed)           0.459    11.897    MEM/rs_tag_reg[6][3]_0
+    SLICE_X27Y34         LUT4 (Prop_lut4_I2_O)        0.053    11.950 r  MEM/rs_valid[5]_i_8/O
+                         net (fo=1, routed)           0.306    12.255    MEM/rs_valid[5]_i_8_n_0
+    SLICE_X27Y34         LUT6 (Prop_lut6_I2_O)        0.053    12.308 r  MEM/rs_valid[5]_i_2/O
+                         net (fo=8, routed)           0.432    12.740    MEM/rs_tag_reg[7][3]
+    SLICE_X31Y33         LUT4 (Prop_lut4_I3_O)        0.053    12.793 f  MEM/rs_insn_reg_r1_0_7_6_11_i_9/O
+                         net (fo=51, routed)          0.469    13.262    MEM_n_1150
+    SLICE_X36Y33         LUT1 (Prop_lut1_I0_O)        0.053    13.315 r  rs_insn_reg_r1_0_7_6_11_i_2/O
+                         net (fo=6, routed)           0.500    13.815    rs_insn_reg_r1_0_7_6_11/ADDRB2
+    SLICE_X38Y32         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.067    13.882 r  rs_insn_reg_r1_0_7_6_11/RAMB/O
+                         net (fo=2, routed)           0.565    14.446    MEM/DI[0]
+    SLICE_X35Y30         LUT4 (Prop_lut4_I3_O)        0.172    14.618 r  MEM/rob_st_addr[0][3]_i_5/O
+                         net (fo=1, routed)           0.000    14.618    MEM/rob_st_addr[0][3]_i_5_n_0
+    SLICE_X35Y30         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.313    14.931 r  MEM/rob_st_addr_reg[0][3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.931    MEM/rob_st_addr_reg[0][3]_i_1_n_0
+    SLICE_X35Y31         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.187    15.118 r  MEM/rob_st_addr_reg[0][7]_i_2/O[3]
+                         net (fo=71, routed)          0.508    15.627    MEM/raddr[7]
+    SLICE_X34Y32         LUT6 (Prop_lut6_I0_O)        0.142    15.769 r  MEM/rs_v1[1][30]_i_135/O
+                         net (fo=1, routed)           0.505    16.274    MEM/rs_v1[1][30]_i_135_n_0
+    SLICE_X33Y32         LUT4 (Prop_lut4_I3_O)        0.053    16.327 r  MEM/rs_v1[1][30]_i_103/O
+                         net (fo=1, routed)           0.228    16.555    MEM/rs_v1[1][30]_i_103_n_0
+    SLICE_X33Y33         LUT6 (Prop_lut6_I3_O)        0.053    16.608 r  MEM/rs_v1[1][30]_i_69/O
+                         net (fo=41, routed)          0.464    17.072    MEM/rs_v1[1][30]_i_69_n_0
+    SLICE_X28Y34         LUT6 (Prop_lut6_I1_O)        0.053    17.125 f  MEM/rs_v1[1][30]_i_101/O
+                         net (fo=2, routed)           0.453    17.579    MEM/rs_v1[1][30]_i_101_n_0
+    SLICE_X30Y33         LUT6 (Prop_lut6_I5_O)        0.053    17.632 r  MEM/rs_v1[1][30]_i_65/O
+                         net (fo=36, routed)          0.613    18.245    MEM/rs_v1[1][30]_i_65_n_0
+    SLICE_X33Y35         LUT6 (Prop_lut6_I4_O)        0.053    18.298 f  MEM/rs_v1[1][31]_i_221/O
+                         net (fo=2, routed)           0.460    18.758    MEM/rs_v1[1][31]_i_221_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I3_O)        0.053    18.811 f  MEM/rs_v1[1][31]_i_177/O
+                         net (fo=6, routed)           0.427    19.238    MEM/rs_v1[1][31]_i_177_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I0_O)        0.053    19.291 r  MEM/rs_v1[1][31]_i_117/O
+                         net (fo=2, routed)           0.237    19.528    MEM/rs_v1[1][31]_i_117_n_0
+    SLICE_X31Y36         LUT6 (Prop_lut6_I5_O)        0.053    19.581 r  MEM/rs_v1[1][31]_i_68/O
+                         net (fo=43, routed)          0.286    19.867    MEM/rs_v1[1][31]_i_68_n_0
+    SLICE_X32Y36         LUT6 (Prop_lut6_I1_O)        0.053    19.920 r  MEM/rs_v1[1][31]_i_119/O
+                         net (fo=1, routed)           0.448    20.369    MEM/rs_v1[1][31]_i_119_n_0
+    SLICE_X33Y37         LUT6 (Prop_lut6_I1_O)        0.053    20.422 r  MEM/rs_v1[1][31]_i_69/O
+                         net (fo=45, routed)          0.491    20.912    MEM/rs_v1[1][31]_i_69_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    20.965 r  MEM/rs_v1[1][31]_i_125/O
+                         net (fo=3, routed)           0.608    21.573    MEM/rs_v1[1][31]_i_125_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I1_O)        0.053    21.626 r  MEM/rs_v1[1][31]_i_70/O
+                         net (fo=36, routed)          0.174    21.800    MEM/rs_v1[1][31]_i_70_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    21.853 f  MEM/rs_v1[1][31]_i_101/O
+                         net (fo=3, routed)           0.816    22.670    MEM/rs_v1[1][31]_i_101_n_0
+    SLICE_X37Y36         LUT6 (Prop_lut6_I0_O)        0.053    22.723 r  MEM/rs_v1[1][31]_i_66/O
+                         net (fo=77, routed)          0.416    23.139    MEM/rs_v1[1][31]_i_66_n_0
+    SLICE_X37Y37         LUT2 (Prop_lut2_I1_O)        0.053    23.192 r  MEM/rs_v1[1][31]_i_100/O
+                         net (fo=2, routed)           0.522    23.715    MEM/rs_v1[1][31]_i_100_n_0
+    SLICE_X36Y36         LUT6 (Prop_lut6_I5_O)        0.053    23.768 r  MEM/rs_v1[1][31]_i_65/O
+                         net (fo=74, routed)          0.376    24.143    MEM/rs_v1[1][31]_i_65_n_0
+    SLICE_X39Y35         LUT6 (Prop_lut6_I4_O)        0.053    24.196 r  MEM/rs_v1[1][31]_i_108/O
+                         net (fo=1, routed)           0.546    24.742    MEM/rs_v1[1][31]_i_108_n_0
+    SLICE_X39Y36         LUT6 (Prop_lut6_I1_O)        0.053    24.795 r  MEM/rs_v1[1][31]_i_67/O
+                         net (fo=70, routed)          0.438    25.233    MEM/rs_v1[1][31]_i_67_n_0
+    SLICE_X40Y37         LUT5 (Prop_lut5_I3_O)        0.053    25.286 f  MEM/rs_v1[1][31]_i_75/O
+                         net (fo=1, routed)           0.563    25.849    MEM/rs_v1[1][31]_i_75_n_0
+    SLICE_X40Y38         LUT6 (Prop_lut6_I3_O)        0.053    25.902 r  MEM/rs_v1[1][31]_i_37/O
+                         net (fo=37, routed)          1.016    26.919    MEM/rs_v1[1][31]_i_37_n_0
+    SLICE_X30Y49         LUT6 (Prop_lut6_I4_O)        0.053    26.972 r  MEM/rs_v1[1][31]_i_16/O
+                         net (fo=13, routed)          0.504    27.476    MEM/rs_v1[1][31]_i_16_n_0
+    SLICE_X26Y49         LUT5 (Prop_lut5_I4_O)        0.053    27.529 r  MEM/rs_v2[6][31]_i_4/O
+                         net (fo=1, routed)           0.582    28.111    MEM/rs_v2[6][31]_i_4_n_0
+    SLICE_X19Y50         LUT6 (Prop_lut6_I5_O)        0.053    28.164 r  MEM/rs_v2[6][31]_i_2/O
+                         net (fo=1, routed)           0.000    28.164    MEM_n_405
+    SLICE_X19Y50         FDRE                                         r  rs_v2_reg[6][31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=3760, unset)         1.291    11.291    clk
+    SLICE_X19Y50         FDRE                                         r  rs_v2_reg[6][31]/C
+                         clock pessimism              0.010    11.301    
+                         clock uncertainty           -0.035    11.266    
+    SLICE_X19Y50         FDRE (Setup_fdre_C_D)        0.034    11.300    rs_v2_reg[6][31]
+  -------------------------------------------------------------------
+                         required time                         11.300    
+                         arrival time                         -28.164    
+  -------------------------------------------------------------------
+                         slack                                -16.864    
+
+Slack (VIOLATED) :        -16.862ns  (required time - arrival time)
+  Source:                 head_reg[0]_rep__4/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rs_v2_reg[7][25]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        26.571ns  (logic 3.535ns (13.304%)  route 23.036ns (86.696%))
+  Logic Levels:           50  (CARRY4=2 LUT1=1 LUT2=2 LUT3=1 LUT4=5 LUT5=2 LUT6=36 RAMD32=1)
+  Clock Path Skew:        -0.290ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.288ns = ( 11.288 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.010ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         1.588     1.588    clk
+    SLICE_X23Y32         FDRE                                         r  head_reg[0]_rep__4/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y32         FDRE (Prop_fdre_C_Q)         0.269     1.857 r  head_reg[0]_rep__4/Q
+                         net (fo=100, routed)         0.826     2.683    MEM/head_reg[2]_rep__1_0
+    SLICE_X20Y32         LUT4 (Prop_lut4_I2_O)        0.053     2.736 r  MEM/rs_valid[1]_i_19/O
+                         net (fo=4, routed)           0.596     3.332    MEM/rs_valid[1]_i_19_n_0
+    SLICE_X19Y33         LUT6 (Prop_lut6_I4_O)        0.053     3.385 f  MEM/rs_insn_reg_r1_0_7_6_11_i_158/O
+                         net (fo=1, routed)           0.417     3.802    MEM/rs_insn_reg_r1_0_7_6_11_i_158_n_0
+    SLICE_X18Y32         LUT6 (Prop_lut6_I0_O)        0.053     3.855 f  MEM/rs_insn_reg_r1_0_7_6_11_i_101/O
+                         net (fo=1, routed)           0.562     4.417    MEM/rs_insn_reg_r1_0_7_6_11_i_101_n_0
+    SLICE_X21Y32         LUT6 (Prop_lut6_I1_O)        0.053     4.470 r  MEM/rs_insn_reg_r1_0_7_6_11_i_67/O
+                         net (fo=12, routed)          0.453     4.923    MEM/rs_insn_reg_r1_0_7_6_11_i_67_n_0
+    SLICE_X19Y32         LUT6 (Prop_lut6_I4_O)        0.053     4.976 r  MEM/rs_valid[1]_i_6/O
+                         net (fo=1, routed)           0.544     5.520    MEM/rs_valid[1]_i_6_n_0
+    SLICE_X17Y32         LUT6 (Prop_lut6_I1_O)        0.053     5.573 r  MEM/rs_valid[1]_i_4/O
+                         net (fo=17, routed)          0.400     5.974    MEM/rs_tag_reg[0][0]
+    SLICE_X17Y33         LUT6 (Prop_lut6_I3_O)        0.053     6.027 f  MEM/rs_insn_reg_r1_0_7_6_11_i_42/O
+                         net (fo=1, routed)           0.442     6.469    MEM/rs_insn_reg_r1_0_7_6_11_i_42_n_0
+    SLICE_X16Y33         LUT6 (Prop_lut6_I4_O)        0.053     6.522 r  MEM/rs_insn_reg_r1_0_7_6_11_i_19/O
+                         net (fo=15, routed)          0.513     7.035    MEM/rs_is_ld_reg[2]
+    SLICE_X16Y35         LUT6 (Prop_lut6_I4_O)        0.053     7.088 r  MEM/rs_valid[6]_i_22/O
+                         net (fo=2, routed)           0.479     7.567    MEM/rs_valid[6]_i_22_n_0
+    SLICE_X16Y35         LUT6 (Prop_lut6_I0_O)        0.053     7.620 r  MEM/rs_insn_reg_r1_0_7_6_11_i_185/O
+                         net (fo=6, routed)           0.353     7.973    MEM/rs_insn_reg_r1_0_7_6_11_i_185_n_0
+    SLICE_X18Y34         LUT6 (Prop_lut6_I3_O)        0.053     8.026 r  MEM/rs_insn_reg_r1_0_7_6_11_i_124/O
+                         net (fo=1, routed)           0.557     8.583    MEM/rs_insn_reg_r1_0_7_6_11_i_124_n_0
+    SLICE_X16Y34         LUT6 (Prop_lut6_I1_O)        0.053     8.636 r  MEM/rs_insn_reg_r1_0_7_6_11_i_85/O
+                         net (fo=1, routed)           0.462     9.098    MEM/rs_insn_reg_r1_0_7_6_11_i_85_n_0
+    SLICE_X20Y35         LUT6 (Prop_lut6_I3_O)        0.053     9.151 f  MEM/rs_insn_reg_r1_0_7_6_11_i_59/O
+                         net (fo=1, routed)           0.412     9.563    MEM/rs_insn_reg_r1_0_7_6_11_i_59_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I0_O)        0.053     9.616 r  MEM/rs_insn_reg_r1_0_7_6_11_i_30/O
+                         net (fo=1, routed)           0.456    10.072    MEM/rs_insn_reg_r1_0_7_6_11_i_30_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I3_O)        0.053    10.125 r  MEM/rs_insn_reg_r1_0_7_6_11_i_17/O
+                         net (fo=11, routed)          0.459    10.584    MEM/rs_is_ld_reg[5]
+    SLICE_X24Y34         LUT3 (Prop_lut3_I1_O)        0.053    10.637 f  MEM/rs_valid[5]_i_13/O
+                         net (fo=5, routed)           0.252    10.889    MEM/rs_valid[5]_i_13_n_0
+    SLICE_X25Y34         LUT2 (Prop_lut2_I1_O)        0.053    10.942 r  MEM/rs_valid[6]_i_6/O
+                         net (fo=1, routed)           0.443    11.385    MEM/rs_valid[6]_i_6_n_0
+    SLICE_X26Y34         LUT6 (Prop_lut6_I2_O)        0.053    11.438 r  MEM/rs_valid[6]_i_2/O
+                         net (fo=7, routed)           0.459    11.897    MEM/rs_tag_reg[6][3]_0
+    SLICE_X27Y34         LUT4 (Prop_lut4_I2_O)        0.053    11.950 r  MEM/rs_valid[5]_i_8/O
+                         net (fo=1, routed)           0.306    12.255    MEM/rs_valid[5]_i_8_n_0
+    SLICE_X27Y34         LUT6 (Prop_lut6_I2_O)        0.053    12.308 r  MEM/rs_valid[5]_i_2/O
+                         net (fo=8, routed)           0.432    12.740    MEM/rs_tag_reg[7][3]
+    SLICE_X31Y33         LUT4 (Prop_lut4_I3_O)        0.053    12.793 f  MEM/rs_insn_reg_r1_0_7_6_11_i_9/O
+                         net (fo=51, routed)          0.469    13.262    MEM_n_1150
+    SLICE_X36Y33         LUT1 (Prop_lut1_I0_O)        0.053    13.315 r  rs_insn_reg_r1_0_7_6_11_i_2/O
+                         net (fo=6, routed)           0.500    13.815    rs_insn_reg_r1_0_7_6_11/ADDRB2
+    SLICE_X38Y32         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.067    13.882 r  rs_insn_reg_r1_0_7_6_11/RAMB/O
+                         net (fo=2, routed)           0.565    14.446    MEM/DI[0]
+    SLICE_X35Y30         LUT4 (Prop_lut4_I3_O)        0.172    14.618 r  MEM/rob_st_addr[0][3]_i_5/O
+                         net (fo=1, routed)           0.000    14.618    MEM/rob_st_addr[0][3]_i_5_n_0
+    SLICE_X35Y30         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.313    14.931 r  MEM/rob_st_addr_reg[0][3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.931    MEM/rob_st_addr_reg[0][3]_i_1_n_0
+    SLICE_X35Y31         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.187    15.118 r  MEM/rob_st_addr_reg[0][7]_i_2/O[3]
+                         net (fo=71, routed)          0.508    15.627    MEM/raddr[7]
+    SLICE_X34Y32         LUT6 (Prop_lut6_I0_O)        0.142    15.769 r  MEM/rs_v1[1][30]_i_135/O
+                         net (fo=1, routed)           0.505    16.274    MEM/rs_v1[1][30]_i_135_n_0
+    SLICE_X33Y32         LUT4 (Prop_lut4_I3_O)        0.053    16.327 r  MEM/rs_v1[1][30]_i_103/O
+                         net (fo=1, routed)           0.228    16.555    MEM/rs_v1[1][30]_i_103_n_0
+    SLICE_X33Y33         LUT6 (Prop_lut6_I3_O)        0.053    16.608 r  MEM/rs_v1[1][30]_i_69/O
+                         net (fo=41, routed)          0.464    17.072    MEM/rs_v1[1][30]_i_69_n_0
+    SLICE_X28Y34         LUT6 (Prop_lut6_I1_O)        0.053    17.125 f  MEM/rs_v1[1][30]_i_101/O
+                         net (fo=2, routed)           0.453    17.579    MEM/rs_v1[1][30]_i_101_n_0
+    SLICE_X30Y33         LUT6 (Prop_lut6_I5_O)        0.053    17.632 r  MEM/rs_v1[1][30]_i_65/O
+                         net (fo=36, routed)          0.613    18.245    MEM/rs_v1[1][30]_i_65_n_0
+    SLICE_X33Y35         LUT6 (Prop_lut6_I4_O)        0.053    18.298 f  MEM/rs_v1[1][31]_i_221/O
+                         net (fo=2, routed)           0.460    18.758    MEM/rs_v1[1][31]_i_221_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I3_O)        0.053    18.811 f  MEM/rs_v1[1][31]_i_177/O
+                         net (fo=6, routed)           0.427    19.238    MEM/rs_v1[1][31]_i_177_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I0_O)        0.053    19.291 r  MEM/rs_v1[1][31]_i_117/O
+                         net (fo=2, routed)           0.237    19.528    MEM/rs_v1[1][31]_i_117_n_0
+    SLICE_X31Y36         LUT6 (Prop_lut6_I5_O)        0.053    19.581 r  MEM/rs_v1[1][31]_i_68/O
+                         net (fo=43, routed)          0.286    19.867    MEM/rs_v1[1][31]_i_68_n_0
+    SLICE_X32Y36         LUT6 (Prop_lut6_I1_O)        0.053    19.920 r  MEM/rs_v1[1][31]_i_119/O
+                         net (fo=1, routed)           0.448    20.369    MEM/rs_v1[1][31]_i_119_n_0
+    SLICE_X33Y37         LUT6 (Prop_lut6_I1_O)        0.053    20.422 r  MEM/rs_v1[1][31]_i_69/O
+                         net (fo=45, routed)          0.491    20.912    MEM/rs_v1[1][31]_i_69_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    20.965 r  MEM/rs_v1[1][31]_i_125/O
+                         net (fo=3, routed)           0.608    21.573    MEM/rs_v1[1][31]_i_125_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I1_O)        0.053    21.626 r  MEM/rs_v1[1][31]_i_70/O
+                         net (fo=36, routed)          0.174    21.800    MEM/rs_v1[1][31]_i_70_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    21.853 f  MEM/rs_v1[1][31]_i_101/O
+                         net (fo=3, routed)           0.816    22.670    MEM/rs_v1[1][31]_i_101_n_0
+    SLICE_X37Y36         LUT6 (Prop_lut6_I0_O)        0.053    22.723 r  MEM/rs_v1[1][31]_i_66/O
+                         net (fo=77, routed)          0.416    23.139    MEM/rs_v1[1][31]_i_66_n_0
+    SLICE_X37Y37         LUT2 (Prop_lut2_I1_O)        0.053    23.192 r  MEM/rs_v1[1][31]_i_100/O
+                         net (fo=2, routed)           0.522    23.715    MEM/rs_v1[1][31]_i_100_n_0
+    SLICE_X36Y36         LUT6 (Prop_lut6_I5_O)        0.053    23.768 r  MEM/rs_v1[1][31]_i_65/O
+                         net (fo=74, routed)          0.376    24.143    MEM/rs_v1[1][31]_i_65_n_0
+    SLICE_X39Y35         LUT6 (Prop_lut6_I4_O)        0.053    24.196 r  MEM/rs_v1[1][31]_i_108/O
+                         net (fo=1, routed)           0.546    24.742    MEM/rs_v1[1][31]_i_108_n_0
+    SLICE_X39Y36         LUT6 (Prop_lut6_I1_O)        0.053    24.795 r  MEM/rs_v1[1][31]_i_67/O
+                         net (fo=70, routed)          0.438    25.233    MEM/rs_v1[1][31]_i_67_n_0
+    SLICE_X40Y37         LUT5 (Prop_lut5_I3_O)        0.053    25.286 f  MEM/rs_v1[1][31]_i_75/O
+                         net (fo=1, routed)           0.563    25.849    MEM/rs_v1[1][31]_i_75_n_0
+    SLICE_X40Y38         LUT6 (Prop_lut6_I3_O)        0.053    25.902 r  MEM/rs_v1[1][31]_i_37/O
+                         net (fo=37, routed)          0.834    26.736    MEM/rs_v1[1][31]_i_37_n_0
+    SLICE_X33Y42         LUT6 (Prop_lut6_I4_O)        0.053    26.789 r  MEM/rs_v1[1][25]_i_8/O
+                         net (fo=14, routed)          0.854    27.643    MEM/rs_v1[1][25]_i_8_n_0
+    SLICE_X22Y53         LUT5 (Prop_lut5_I4_O)        0.053    27.696 r  MEM/rs_v2[7][25]_i_2/O
+                         net (fo=1, routed)           0.410    28.106    MEM/rs_v2[7][25]_i_2_n_0
+    SLICE_X23Y53         LUT6 (Prop_lut6_I5_O)        0.053    28.159 r  MEM/rs_v2[7][25]_i_1/O
+                         net (fo=1, routed)           0.000    28.159    MEM_n_312
+    SLICE_X23Y53         FDRE                                         r  rs_v2_reg[7][25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=3760, unset)         1.288    11.288    clk
+    SLICE_X23Y53         FDRE                                         r  rs_v2_reg[7][25]/C
+                         clock pessimism              0.010    11.298    
+                         clock uncertainty           -0.035    11.263    
+    SLICE_X23Y53         FDRE (Setup_fdre_C_D)        0.035    11.298    rs_v2_reg[7][25]
+  -------------------------------------------------------------------
+                         required time                         11.298    
+                         arrival time                         -28.159    
+  -------------------------------------------------------------------
+                         slack                                -16.862    
+
+Slack (VIOLATED) :        -16.842ns  (required time - arrival time)
+  Source:                 head_reg[0]_rep__4/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_value_reg[6][31]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        26.591ns  (logic 3.535ns (13.294%)  route 23.056ns (86.706%))
+  Logic Levels:           50  (CARRY4=2 LUT1=1 LUT2=2 LUT3=2 LUT4=5 LUT5=1 LUT6=36 RAMD32=1)
+  Clock Path Skew:        -0.289ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.289ns = ( 11.289 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.010ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         1.588     1.588    clk
+    SLICE_X23Y32         FDRE                                         r  head_reg[0]_rep__4/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y32         FDRE (Prop_fdre_C_Q)         0.269     1.857 r  head_reg[0]_rep__4/Q
+                         net (fo=100, routed)         0.826     2.683    MEM/head_reg[2]_rep__1_0
+    SLICE_X20Y32         LUT4 (Prop_lut4_I2_O)        0.053     2.736 r  MEM/rs_valid[1]_i_19/O
+                         net (fo=4, routed)           0.596     3.332    MEM/rs_valid[1]_i_19_n_0
+    SLICE_X19Y33         LUT6 (Prop_lut6_I4_O)        0.053     3.385 f  MEM/rs_insn_reg_r1_0_7_6_11_i_158/O
+                         net (fo=1, routed)           0.417     3.802    MEM/rs_insn_reg_r1_0_7_6_11_i_158_n_0
+    SLICE_X18Y32         LUT6 (Prop_lut6_I0_O)        0.053     3.855 f  MEM/rs_insn_reg_r1_0_7_6_11_i_101/O
+                         net (fo=1, routed)           0.562     4.417    MEM/rs_insn_reg_r1_0_7_6_11_i_101_n_0
+    SLICE_X21Y32         LUT6 (Prop_lut6_I1_O)        0.053     4.470 r  MEM/rs_insn_reg_r1_0_7_6_11_i_67/O
+                         net (fo=12, routed)          0.453     4.923    MEM/rs_insn_reg_r1_0_7_6_11_i_67_n_0
+    SLICE_X19Y32         LUT6 (Prop_lut6_I4_O)        0.053     4.976 r  MEM/rs_valid[1]_i_6/O
+                         net (fo=1, routed)           0.544     5.520    MEM/rs_valid[1]_i_6_n_0
+    SLICE_X17Y32         LUT6 (Prop_lut6_I1_O)        0.053     5.573 r  MEM/rs_valid[1]_i_4/O
+                         net (fo=17, routed)          0.400     5.974    MEM/rs_tag_reg[0][0]
+    SLICE_X17Y33         LUT6 (Prop_lut6_I3_O)        0.053     6.027 f  MEM/rs_insn_reg_r1_0_7_6_11_i_42/O
+                         net (fo=1, routed)           0.442     6.469    MEM/rs_insn_reg_r1_0_7_6_11_i_42_n_0
+    SLICE_X16Y33         LUT6 (Prop_lut6_I4_O)        0.053     6.522 r  MEM/rs_insn_reg_r1_0_7_6_11_i_19/O
+                         net (fo=15, routed)          0.513     7.035    MEM/rs_is_ld_reg[2]
+    SLICE_X16Y35         LUT6 (Prop_lut6_I4_O)        0.053     7.088 r  MEM/rs_valid[6]_i_22/O
+                         net (fo=2, routed)           0.479     7.567    MEM/rs_valid[6]_i_22_n_0
+    SLICE_X16Y35         LUT6 (Prop_lut6_I0_O)        0.053     7.620 r  MEM/rs_insn_reg_r1_0_7_6_11_i_185/O
+                         net (fo=6, routed)           0.353     7.973    MEM/rs_insn_reg_r1_0_7_6_11_i_185_n_0
+    SLICE_X18Y34         LUT6 (Prop_lut6_I3_O)        0.053     8.026 r  MEM/rs_insn_reg_r1_0_7_6_11_i_124/O
+                         net (fo=1, routed)           0.557     8.583    MEM/rs_insn_reg_r1_0_7_6_11_i_124_n_0
+    SLICE_X16Y34         LUT6 (Prop_lut6_I1_O)        0.053     8.636 r  MEM/rs_insn_reg_r1_0_7_6_11_i_85/O
+                         net (fo=1, routed)           0.462     9.098    MEM/rs_insn_reg_r1_0_7_6_11_i_85_n_0
+    SLICE_X20Y35         LUT6 (Prop_lut6_I3_O)        0.053     9.151 f  MEM/rs_insn_reg_r1_0_7_6_11_i_59/O
+                         net (fo=1, routed)           0.412     9.563    MEM/rs_insn_reg_r1_0_7_6_11_i_59_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I0_O)        0.053     9.616 r  MEM/rs_insn_reg_r1_0_7_6_11_i_30/O
+                         net (fo=1, routed)           0.456    10.072    MEM/rs_insn_reg_r1_0_7_6_11_i_30_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I3_O)        0.053    10.125 r  MEM/rs_insn_reg_r1_0_7_6_11_i_17/O
+                         net (fo=11, routed)          0.459    10.584    MEM/rs_is_ld_reg[5]
+    SLICE_X24Y34         LUT3 (Prop_lut3_I1_O)        0.053    10.637 f  MEM/rs_valid[5]_i_13/O
+                         net (fo=5, routed)           0.252    10.889    MEM/rs_valid[5]_i_13_n_0
+    SLICE_X25Y34         LUT2 (Prop_lut2_I1_O)        0.053    10.942 r  MEM/rs_valid[6]_i_6/O
+                         net (fo=1, routed)           0.443    11.385    MEM/rs_valid[6]_i_6_n_0
+    SLICE_X26Y34         LUT6 (Prop_lut6_I2_O)        0.053    11.438 r  MEM/rs_valid[6]_i_2/O
+                         net (fo=7, routed)           0.459    11.897    MEM/rs_tag_reg[6][3]_0
+    SLICE_X27Y34         LUT4 (Prop_lut4_I2_O)        0.053    11.950 r  MEM/rs_valid[5]_i_8/O
+                         net (fo=1, routed)           0.306    12.255    MEM/rs_valid[5]_i_8_n_0
+    SLICE_X27Y34         LUT6 (Prop_lut6_I2_O)        0.053    12.308 r  MEM/rs_valid[5]_i_2/O
+                         net (fo=8, routed)           0.432    12.740    MEM/rs_tag_reg[7][3]
+    SLICE_X31Y33         LUT4 (Prop_lut4_I3_O)        0.053    12.793 f  MEM/rs_insn_reg_r1_0_7_6_11_i_9/O
+                         net (fo=51, routed)          0.469    13.262    MEM_n_1150
+    SLICE_X36Y33         LUT1 (Prop_lut1_I0_O)        0.053    13.315 r  rs_insn_reg_r1_0_7_6_11_i_2/O
+                         net (fo=6, routed)           0.500    13.815    rs_insn_reg_r1_0_7_6_11/ADDRB2
+    SLICE_X38Y32         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.067    13.882 r  rs_insn_reg_r1_0_7_6_11/RAMB/O
+                         net (fo=2, routed)           0.565    14.446    MEM/DI[0]
+    SLICE_X35Y30         LUT4 (Prop_lut4_I3_O)        0.172    14.618 r  MEM/rob_st_addr[0][3]_i_5/O
+                         net (fo=1, routed)           0.000    14.618    MEM/rob_st_addr[0][3]_i_5_n_0
+    SLICE_X35Y30         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.313    14.931 r  MEM/rob_st_addr_reg[0][3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.931    MEM/rob_st_addr_reg[0][3]_i_1_n_0
+    SLICE_X35Y31         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.187    15.118 r  MEM/rob_st_addr_reg[0][7]_i_2/O[3]
+                         net (fo=71, routed)          0.508    15.627    MEM/raddr[7]
+    SLICE_X34Y32         LUT6 (Prop_lut6_I0_O)        0.142    15.769 r  MEM/rs_v1[1][30]_i_135/O
+                         net (fo=1, routed)           0.505    16.274    MEM/rs_v1[1][30]_i_135_n_0
+    SLICE_X33Y32         LUT4 (Prop_lut4_I3_O)        0.053    16.327 r  MEM/rs_v1[1][30]_i_103/O
+                         net (fo=1, routed)           0.228    16.555    MEM/rs_v1[1][30]_i_103_n_0
+    SLICE_X33Y33         LUT6 (Prop_lut6_I3_O)        0.053    16.608 r  MEM/rs_v1[1][30]_i_69/O
+                         net (fo=41, routed)          0.464    17.072    MEM/rs_v1[1][30]_i_69_n_0
+    SLICE_X28Y34         LUT6 (Prop_lut6_I1_O)        0.053    17.125 f  MEM/rs_v1[1][30]_i_101/O
+                         net (fo=2, routed)           0.453    17.579    MEM/rs_v1[1][30]_i_101_n_0
+    SLICE_X30Y33         LUT6 (Prop_lut6_I5_O)        0.053    17.632 r  MEM/rs_v1[1][30]_i_65/O
+                         net (fo=36, routed)          0.613    18.245    MEM/rs_v1[1][30]_i_65_n_0
+    SLICE_X33Y35         LUT6 (Prop_lut6_I4_O)        0.053    18.298 f  MEM/rs_v1[1][31]_i_221/O
+                         net (fo=2, routed)           0.460    18.758    MEM/rs_v1[1][31]_i_221_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I3_O)        0.053    18.811 f  MEM/rs_v1[1][31]_i_177/O
+                         net (fo=6, routed)           0.427    19.238    MEM/rs_v1[1][31]_i_177_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I0_O)        0.053    19.291 r  MEM/rs_v1[1][31]_i_117/O
+                         net (fo=2, routed)           0.237    19.528    MEM/rs_v1[1][31]_i_117_n_0
+    SLICE_X31Y36         LUT6 (Prop_lut6_I5_O)        0.053    19.581 r  MEM/rs_v1[1][31]_i_68/O
+                         net (fo=43, routed)          0.286    19.867    MEM/rs_v1[1][31]_i_68_n_0
+    SLICE_X32Y36         LUT6 (Prop_lut6_I1_O)        0.053    19.920 r  MEM/rs_v1[1][31]_i_119/O
+                         net (fo=1, routed)           0.448    20.369    MEM/rs_v1[1][31]_i_119_n_0
+    SLICE_X33Y37         LUT6 (Prop_lut6_I1_O)        0.053    20.422 r  MEM/rs_v1[1][31]_i_69/O
+                         net (fo=45, routed)          0.491    20.912    MEM/rs_v1[1][31]_i_69_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    20.965 r  MEM/rs_v1[1][31]_i_125/O
+                         net (fo=3, routed)           0.608    21.573    MEM/rs_v1[1][31]_i_125_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I1_O)        0.053    21.626 r  MEM/rs_v1[1][31]_i_70/O
+                         net (fo=36, routed)          0.174    21.800    MEM/rs_v1[1][31]_i_70_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    21.853 f  MEM/rs_v1[1][31]_i_101/O
+                         net (fo=3, routed)           0.816    22.670    MEM/rs_v1[1][31]_i_101_n_0
+    SLICE_X37Y36         LUT6 (Prop_lut6_I0_O)        0.053    22.723 r  MEM/rs_v1[1][31]_i_66/O
+                         net (fo=77, routed)          0.416    23.139    MEM/rs_v1[1][31]_i_66_n_0
+    SLICE_X37Y37         LUT2 (Prop_lut2_I1_O)        0.053    23.192 r  MEM/rs_v1[1][31]_i_100/O
+                         net (fo=2, routed)           0.522    23.715    MEM/rs_v1[1][31]_i_100_n_0
+    SLICE_X36Y36         LUT6 (Prop_lut6_I5_O)        0.053    23.768 r  MEM/rs_v1[1][31]_i_65/O
+                         net (fo=74, routed)          0.376    24.143    MEM/rs_v1[1][31]_i_65_n_0
+    SLICE_X39Y35         LUT6 (Prop_lut6_I4_O)        0.053    24.196 r  MEM/rs_v1[1][31]_i_108/O
+                         net (fo=1, routed)           0.546    24.742    MEM/rs_v1[1][31]_i_108_n_0
+    SLICE_X39Y36         LUT6 (Prop_lut6_I1_O)        0.053    24.795 r  MEM/rs_v1[1][31]_i_67/O
+                         net (fo=70, routed)          0.438    25.233    MEM/rs_v1[1][31]_i_67_n_0
+    SLICE_X40Y37         LUT5 (Prop_lut5_I3_O)        0.053    25.286 f  MEM/rs_v1[1][31]_i_75/O
+                         net (fo=1, routed)           0.563    25.849    MEM/rs_v1[1][31]_i_75_n_0
+    SLICE_X40Y38         LUT6 (Prop_lut6_I3_O)        0.053    25.902 r  MEM/rs_v1[1][31]_i_37/O
+                         net (fo=37, routed)          1.016    26.919    MEM/rs_v1[1][31]_i_37_n_0
+    SLICE_X30Y49         LUT6 (Prop_lut6_I4_O)        0.053    26.972 r  MEM/rs_v1[1][31]_i_16/O
+                         net (fo=13, routed)          0.392    27.363    MEM/rs_v1[1][31]_i_16_n_0
+    SLICE_X30Y49         LUT3 (Prop_lut3_I2_O)        0.053    27.416 r  MEM/rs_v1[1][31]_i_9/O
+                         net (fo=23, routed)          0.710    28.126    MEM/rs_v1[1][31]_i_9_n_0
+    SLICE_X20Y53         LUT6 (Prop_lut6_I4_O)        0.053    28.179 r  MEM/rob_value[6][31]_i_1/O
+                         net (fo=1, routed)           0.000    28.179    MEM_n_741
+    SLICE_X20Y53         FDRE                                         r  rob_value_reg[6][31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=3760, unset)         1.289    11.289    clk
+    SLICE_X20Y53         FDRE                                         r  rob_value_reg[6][31]/C
+                         clock pessimism              0.010    11.299    
+                         clock uncertainty           -0.035    11.264    
+    SLICE_X20Y53         FDRE (Setup_fdre_C_D)        0.073    11.337    rob_value_reg[6][31]
+  -------------------------------------------------------------------
+                         required time                         11.337    
+                         arrival time                         -28.179    
+  -------------------------------------------------------------------
+                         slack                                -16.842    
+
+Slack (VIOLATED) :        -16.842ns  (required time - arrival time)
+  Source:                 head_reg[0]_rep__4/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rs_v2_reg[5][31]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        26.553ns  (logic 3.535ns (13.313%)  route 23.018ns (86.687%))
+  Logic Levels:           50  (CARRY4=2 LUT1=1 LUT2=2 LUT3=1 LUT4=5 LUT5=2 LUT6=36 RAMD32=1)
+  Clock Path Skew:        -0.288ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.290ns = ( 11.290 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.010ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         1.588     1.588    clk
+    SLICE_X23Y32         FDRE                                         r  head_reg[0]_rep__4/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y32         FDRE (Prop_fdre_C_Q)         0.269     1.857 r  head_reg[0]_rep__4/Q
+                         net (fo=100, routed)         0.826     2.683    MEM/head_reg[2]_rep__1_0
+    SLICE_X20Y32         LUT4 (Prop_lut4_I2_O)        0.053     2.736 r  MEM/rs_valid[1]_i_19/O
+                         net (fo=4, routed)           0.596     3.332    MEM/rs_valid[1]_i_19_n_0
+    SLICE_X19Y33         LUT6 (Prop_lut6_I4_O)        0.053     3.385 f  MEM/rs_insn_reg_r1_0_7_6_11_i_158/O
+                         net (fo=1, routed)           0.417     3.802    MEM/rs_insn_reg_r1_0_7_6_11_i_158_n_0
+    SLICE_X18Y32         LUT6 (Prop_lut6_I0_O)        0.053     3.855 f  MEM/rs_insn_reg_r1_0_7_6_11_i_101/O
+                         net (fo=1, routed)           0.562     4.417    MEM/rs_insn_reg_r1_0_7_6_11_i_101_n_0
+    SLICE_X21Y32         LUT6 (Prop_lut6_I1_O)        0.053     4.470 r  MEM/rs_insn_reg_r1_0_7_6_11_i_67/O
+                         net (fo=12, routed)          0.453     4.923    MEM/rs_insn_reg_r1_0_7_6_11_i_67_n_0
+    SLICE_X19Y32         LUT6 (Prop_lut6_I4_O)        0.053     4.976 r  MEM/rs_valid[1]_i_6/O
+                         net (fo=1, routed)           0.544     5.520    MEM/rs_valid[1]_i_6_n_0
+    SLICE_X17Y32         LUT6 (Prop_lut6_I1_O)        0.053     5.573 r  MEM/rs_valid[1]_i_4/O
+                         net (fo=17, routed)          0.400     5.974    MEM/rs_tag_reg[0][0]
+    SLICE_X17Y33         LUT6 (Prop_lut6_I3_O)        0.053     6.027 f  MEM/rs_insn_reg_r1_0_7_6_11_i_42/O
+                         net (fo=1, routed)           0.442     6.469    MEM/rs_insn_reg_r1_0_7_6_11_i_42_n_0
+    SLICE_X16Y33         LUT6 (Prop_lut6_I4_O)        0.053     6.522 r  MEM/rs_insn_reg_r1_0_7_6_11_i_19/O
+                         net (fo=15, routed)          0.513     7.035    MEM/rs_is_ld_reg[2]
+    SLICE_X16Y35         LUT6 (Prop_lut6_I4_O)        0.053     7.088 r  MEM/rs_valid[6]_i_22/O
+                         net (fo=2, routed)           0.479     7.567    MEM/rs_valid[6]_i_22_n_0
+    SLICE_X16Y35         LUT6 (Prop_lut6_I0_O)        0.053     7.620 r  MEM/rs_insn_reg_r1_0_7_6_11_i_185/O
+                         net (fo=6, routed)           0.353     7.973    MEM/rs_insn_reg_r1_0_7_6_11_i_185_n_0
+    SLICE_X18Y34         LUT6 (Prop_lut6_I3_O)        0.053     8.026 r  MEM/rs_insn_reg_r1_0_7_6_11_i_124/O
+                         net (fo=1, routed)           0.557     8.583    MEM/rs_insn_reg_r1_0_7_6_11_i_124_n_0
+    SLICE_X16Y34         LUT6 (Prop_lut6_I1_O)        0.053     8.636 r  MEM/rs_insn_reg_r1_0_7_6_11_i_85/O
+                         net (fo=1, routed)           0.462     9.098    MEM/rs_insn_reg_r1_0_7_6_11_i_85_n_0
+    SLICE_X20Y35         LUT6 (Prop_lut6_I3_O)        0.053     9.151 f  MEM/rs_insn_reg_r1_0_7_6_11_i_59/O
+                         net (fo=1, routed)           0.412     9.563    MEM/rs_insn_reg_r1_0_7_6_11_i_59_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I0_O)        0.053     9.616 r  MEM/rs_insn_reg_r1_0_7_6_11_i_30/O
+                         net (fo=1, routed)           0.456    10.072    MEM/rs_insn_reg_r1_0_7_6_11_i_30_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I3_O)        0.053    10.125 r  MEM/rs_insn_reg_r1_0_7_6_11_i_17/O
+                         net (fo=11, routed)          0.459    10.584    MEM/rs_is_ld_reg[5]
+    SLICE_X24Y34         LUT3 (Prop_lut3_I1_O)        0.053    10.637 f  MEM/rs_valid[5]_i_13/O
+                         net (fo=5, routed)           0.252    10.889    MEM/rs_valid[5]_i_13_n_0
+    SLICE_X25Y34         LUT2 (Prop_lut2_I1_O)        0.053    10.942 r  MEM/rs_valid[6]_i_6/O
+                         net (fo=1, routed)           0.443    11.385    MEM/rs_valid[6]_i_6_n_0
+    SLICE_X26Y34         LUT6 (Prop_lut6_I2_O)        0.053    11.438 r  MEM/rs_valid[6]_i_2/O
+                         net (fo=7, routed)           0.459    11.897    MEM/rs_tag_reg[6][3]_0
+    SLICE_X27Y34         LUT4 (Prop_lut4_I2_O)        0.053    11.950 r  MEM/rs_valid[5]_i_8/O
+                         net (fo=1, routed)           0.306    12.255    MEM/rs_valid[5]_i_8_n_0
+    SLICE_X27Y34         LUT6 (Prop_lut6_I2_O)        0.053    12.308 r  MEM/rs_valid[5]_i_2/O
+                         net (fo=8, routed)           0.432    12.740    MEM/rs_tag_reg[7][3]
+    SLICE_X31Y33         LUT4 (Prop_lut4_I3_O)        0.053    12.793 f  MEM/rs_insn_reg_r1_0_7_6_11_i_9/O
+                         net (fo=51, routed)          0.469    13.262    MEM_n_1150
+    SLICE_X36Y33         LUT1 (Prop_lut1_I0_O)        0.053    13.315 r  rs_insn_reg_r1_0_7_6_11_i_2/O
+                         net (fo=6, routed)           0.500    13.815    rs_insn_reg_r1_0_7_6_11/ADDRB2
+    SLICE_X38Y32         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.067    13.882 r  rs_insn_reg_r1_0_7_6_11/RAMB/O
+                         net (fo=2, routed)           0.565    14.446    MEM/DI[0]
+    SLICE_X35Y30         LUT4 (Prop_lut4_I3_O)        0.172    14.618 r  MEM/rob_st_addr[0][3]_i_5/O
+                         net (fo=1, routed)           0.000    14.618    MEM/rob_st_addr[0][3]_i_5_n_0
+    SLICE_X35Y30         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.313    14.931 r  MEM/rob_st_addr_reg[0][3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.931    MEM/rob_st_addr_reg[0][3]_i_1_n_0
+    SLICE_X35Y31         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.187    15.118 r  MEM/rob_st_addr_reg[0][7]_i_2/O[3]
+                         net (fo=71, routed)          0.508    15.627    MEM/raddr[7]
+    SLICE_X34Y32         LUT6 (Prop_lut6_I0_O)        0.142    15.769 r  MEM/rs_v1[1][30]_i_135/O
+                         net (fo=1, routed)           0.505    16.274    MEM/rs_v1[1][30]_i_135_n_0
+    SLICE_X33Y32         LUT4 (Prop_lut4_I3_O)        0.053    16.327 r  MEM/rs_v1[1][30]_i_103/O
+                         net (fo=1, routed)           0.228    16.555    MEM/rs_v1[1][30]_i_103_n_0
+    SLICE_X33Y33         LUT6 (Prop_lut6_I3_O)        0.053    16.608 r  MEM/rs_v1[1][30]_i_69/O
+                         net (fo=41, routed)          0.464    17.072    MEM/rs_v1[1][30]_i_69_n_0
+    SLICE_X28Y34         LUT6 (Prop_lut6_I1_O)        0.053    17.125 f  MEM/rs_v1[1][30]_i_101/O
+                         net (fo=2, routed)           0.453    17.579    MEM/rs_v1[1][30]_i_101_n_0
+    SLICE_X30Y33         LUT6 (Prop_lut6_I5_O)        0.053    17.632 r  MEM/rs_v1[1][30]_i_65/O
+                         net (fo=36, routed)          0.613    18.245    MEM/rs_v1[1][30]_i_65_n_0
+    SLICE_X33Y35         LUT6 (Prop_lut6_I4_O)        0.053    18.298 f  MEM/rs_v1[1][31]_i_221/O
+                         net (fo=2, routed)           0.460    18.758    MEM/rs_v1[1][31]_i_221_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I3_O)        0.053    18.811 f  MEM/rs_v1[1][31]_i_177/O
+                         net (fo=6, routed)           0.427    19.238    MEM/rs_v1[1][31]_i_177_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I0_O)        0.053    19.291 r  MEM/rs_v1[1][31]_i_117/O
+                         net (fo=2, routed)           0.237    19.528    MEM/rs_v1[1][31]_i_117_n_0
+    SLICE_X31Y36         LUT6 (Prop_lut6_I5_O)        0.053    19.581 r  MEM/rs_v1[1][31]_i_68/O
+                         net (fo=43, routed)          0.286    19.867    MEM/rs_v1[1][31]_i_68_n_0
+    SLICE_X32Y36         LUT6 (Prop_lut6_I1_O)        0.053    19.920 r  MEM/rs_v1[1][31]_i_119/O
+                         net (fo=1, routed)           0.448    20.369    MEM/rs_v1[1][31]_i_119_n_0
+    SLICE_X33Y37         LUT6 (Prop_lut6_I1_O)        0.053    20.422 r  MEM/rs_v1[1][31]_i_69/O
+                         net (fo=45, routed)          0.491    20.912    MEM/rs_v1[1][31]_i_69_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    20.965 r  MEM/rs_v1[1][31]_i_125/O
+                         net (fo=3, routed)           0.608    21.573    MEM/rs_v1[1][31]_i_125_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I1_O)        0.053    21.626 r  MEM/rs_v1[1][31]_i_70/O
+                         net (fo=36, routed)          0.174    21.800    MEM/rs_v1[1][31]_i_70_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    21.853 f  MEM/rs_v1[1][31]_i_101/O
+                         net (fo=3, routed)           0.816    22.670    MEM/rs_v1[1][31]_i_101_n_0
+    SLICE_X37Y36         LUT6 (Prop_lut6_I0_O)        0.053    22.723 r  MEM/rs_v1[1][31]_i_66/O
+                         net (fo=77, routed)          0.416    23.139    MEM/rs_v1[1][31]_i_66_n_0
+    SLICE_X37Y37         LUT2 (Prop_lut2_I1_O)        0.053    23.192 r  MEM/rs_v1[1][31]_i_100/O
+                         net (fo=2, routed)           0.522    23.715    MEM/rs_v1[1][31]_i_100_n_0
+    SLICE_X36Y36         LUT6 (Prop_lut6_I5_O)        0.053    23.768 r  MEM/rs_v1[1][31]_i_65/O
+                         net (fo=74, routed)          0.376    24.143    MEM/rs_v1[1][31]_i_65_n_0
+    SLICE_X39Y35         LUT6 (Prop_lut6_I4_O)        0.053    24.196 r  MEM/rs_v1[1][31]_i_108/O
+                         net (fo=1, routed)           0.546    24.742    MEM/rs_v1[1][31]_i_108_n_0
+    SLICE_X39Y36         LUT6 (Prop_lut6_I1_O)        0.053    24.795 r  MEM/rs_v1[1][31]_i_67/O
+                         net (fo=70, routed)          0.438    25.233    MEM/rs_v1[1][31]_i_67_n_0
+    SLICE_X40Y37         LUT5 (Prop_lut5_I3_O)        0.053    25.286 f  MEM/rs_v1[1][31]_i_75/O
+                         net (fo=1, routed)           0.563    25.849    MEM/rs_v1[1][31]_i_75_n_0
+    SLICE_X40Y38         LUT6 (Prop_lut6_I3_O)        0.053    25.902 r  MEM/rs_v1[1][31]_i_37/O
+                         net (fo=37, routed)          1.016    26.919    MEM/rs_v1[1][31]_i_37_n_0
+    SLICE_X30Y49         LUT6 (Prop_lut6_I4_O)        0.053    26.972 r  MEM/rs_v1[1][31]_i_16/O
+                         net (fo=13, routed)          0.448    27.420    MEM/rs_v1[1][31]_i_16_n_0
+    SLICE_X31Y49         LUT5 (Prop_lut5_I4_O)        0.053    27.473 r  MEM/rs_v2[5][31]_i_4/O
+                         net (fo=1, routed)           0.615    28.088    MEM/rs_v2[5][31]_i_4_n_0
+    SLICE_X21Y50         LUT6 (Prop_lut6_I5_O)        0.053    28.141 r  MEM/rs_v2[5][31]_i_2/O
+                         net (fo=1, routed)           0.000    28.141    MEM_n_438
+    SLICE_X21Y50         FDRE                                         r  rs_v2_reg[5][31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=3760, unset)         1.290    11.290    clk
+    SLICE_X21Y50         FDRE                                         r  rs_v2_reg[5][31]/C
+                         clock pessimism              0.010    11.300    
+                         clock uncertainty           -0.035    11.265    
+    SLICE_X21Y50         FDRE (Setup_fdre_C_D)        0.034    11.299    rs_v2_reg[5][31]
+  -------------------------------------------------------------------
+                         required time                         11.299    
+                         arrival time                         -28.141    
+  -------------------------------------------------------------------
+                         slack                                -16.842    
+
+Slack (VIOLATED) :        -16.837ns  (required time - arrival time)
+  Source:                 head_reg[0]_rep__4/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rs_v2_reg[1][31]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        26.585ns  (logic 3.535ns (13.297%)  route 23.050ns (86.703%))
+  Logic Levels:           50  (CARRY4=2 LUT1=1 LUT2=2 LUT3=1 LUT4=5 LUT5=2 LUT6=36 RAMD32=1)
+  Clock Path Skew:        -0.287ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.291ns = ( 11.291 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.010ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         1.588     1.588    clk
+    SLICE_X23Y32         FDRE                                         r  head_reg[0]_rep__4/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y32         FDRE (Prop_fdre_C_Q)         0.269     1.857 r  head_reg[0]_rep__4/Q
+                         net (fo=100, routed)         0.826     2.683    MEM/head_reg[2]_rep__1_0
+    SLICE_X20Y32         LUT4 (Prop_lut4_I2_O)        0.053     2.736 r  MEM/rs_valid[1]_i_19/O
+                         net (fo=4, routed)           0.596     3.332    MEM/rs_valid[1]_i_19_n_0
+    SLICE_X19Y33         LUT6 (Prop_lut6_I4_O)        0.053     3.385 f  MEM/rs_insn_reg_r1_0_7_6_11_i_158/O
+                         net (fo=1, routed)           0.417     3.802    MEM/rs_insn_reg_r1_0_7_6_11_i_158_n_0
+    SLICE_X18Y32         LUT6 (Prop_lut6_I0_O)        0.053     3.855 f  MEM/rs_insn_reg_r1_0_7_6_11_i_101/O
+                         net (fo=1, routed)           0.562     4.417    MEM/rs_insn_reg_r1_0_7_6_11_i_101_n_0
+    SLICE_X21Y32         LUT6 (Prop_lut6_I1_O)        0.053     4.470 r  MEM/rs_insn_reg_r1_0_7_6_11_i_67/O
+                         net (fo=12, routed)          0.453     4.923    MEM/rs_insn_reg_r1_0_7_6_11_i_67_n_0
+    SLICE_X19Y32         LUT6 (Prop_lut6_I4_O)        0.053     4.976 r  MEM/rs_valid[1]_i_6/O
+                         net (fo=1, routed)           0.544     5.520    MEM/rs_valid[1]_i_6_n_0
+    SLICE_X17Y32         LUT6 (Prop_lut6_I1_O)        0.053     5.573 r  MEM/rs_valid[1]_i_4/O
+                         net (fo=17, routed)          0.400     5.974    MEM/rs_tag_reg[0][0]
+    SLICE_X17Y33         LUT6 (Prop_lut6_I3_O)        0.053     6.027 f  MEM/rs_insn_reg_r1_0_7_6_11_i_42/O
+                         net (fo=1, routed)           0.442     6.469    MEM/rs_insn_reg_r1_0_7_6_11_i_42_n_0
+    SLICE_X16Y33         LUT6 (Prop_lut6_I4_O)        0.053     6.522 r  MEM/rs_insn_reg_r1_0_7_6_11_i_19/O
+                         net (fo=15, routed)          0.513     7.035    MEM/rs_is_ld_reg[2]
+    SLICE_X16Y35         LUT6 (Prop_lut6_I4_O)        0.053     7.088 r  MEM/rs_valid[6]_i_22/O
+                         net (fo=2, routed)           0.479     7.567    MEM/rs_valid[6]_i_22_n_0
+    SLICE_X16Y35         LUT6 (Prop_lut6_I0_O)        0.053     7.620 r  MEM/rs_insn_reg_r1_0_7_6_11_i_185/O
+                         net (fo=6, routed)           0.353     7.973    MEM/rs_insn_reg_r1_0_7_6_11_i_185_n_0
+    SLICE_X18Y34         LUT6 (Prop_lut6_I3_O)        0.053     8.026 r  MEM/rs_insn_reg_r1_0_7_6_11_i_124/O
+                         net (fo=1, routed)           0.557     8.583    MEM/rs_insn_reg_r1_0_7_6_11_i_124_n_0
+    SLICE_X16Y34         LUT6 (Prop_lut6_I1_O)        0.053     8.636 r  MEM/rs_insn_reg_r1_0_7_6_11_i_85/O
+                         net (fo=1, routed)           0.462     9.098    MEM/rs_insn_reg_r1_0_7_6_11_i_85_n_0
+    SLICE_X20Y35         LUT6 (Prop_lut6_I3_O)        0.053     9.151 f  MEM/rs_insn_reg_r1_0_7_6_11_i_59/O
+                         net (fo=1, routed)           0.412     9.563    MEM/rs_insn_reg_r1_0_7_6_11_i_59_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I0_O)        0.053     9.616 r  MEM/rs_insn_reg_r1_0_7_6_11_i_30/O
+                         net (fo=1, routed)           0.456    10.072    MEM/rs_insn_reg_r1_0_7_6_11_i_30_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I3_O)        0.053    10.125 r  MEM/rs_insn_reg_r1_0_7_6_11_i_17/O
+                         net (fo=11, routed)          0.459    10.584    MEM/rs_is_ld_reg[5]
+    SLICE_X24Y34         LUT3 (Prop_lut3_I1_O)        0.053    10.637 f  MEM/rs_valid[5]_i_13/O
+                         net (fo=5, routed)           0.252    10.889    MEM/rs_valid[5]_i_13_n_0
+    SLICE_X25Y34         LUT2 (Prop_lut2_I1_O)        0.053    10.942 r  MEM/rs_valid[6]_i_6/O
+                         net (fo=1, routed)           0.443    11.385    MEM/rs_valid[6]_i_6_n_0
+    SLICE_X26Y34         LUT6 (Prop_lut6_I2_O)        0.053    11.438 r  MEM/rs_valid[6]_i_2/O
+                         net (fo=7, routed)           0.459    11.897    MEM/rs_tag_reg[6][3]_0
+    SLICE_X27Y34         LUT4 (Prop_lut4_I2_O)        0.053    11.950 r  MEM/rs_valid[5]_i_8/O
+                         net (fo=1, routed)           0.306    12.255    MEM/rs_valid[5]_i_8_n_0
+    SLICE_X27Y34         LUT6 (Prop_lut6_I2_O)        0.053    12.308 r  MEM/rs_valid[5]_i_2/O
+                         net (fo=8, routed)           0.432    12.740    MEM/rs_tag_reg[7][3]
+    SLICE_X31Y33         LUT4 (Prop_lut4_I3_O)        0.053    12.793 f  MEM/rs_insn_reg_r1_0_7_6_11_i_9/O
+                         net (fo=51, routed)          0.469    13.262    MEM_n_1150
+    SLICE_X36Y33         LUT1 (Prop_lut1_I0_O)        0.053    13.315 r  rs_insn_reg_r1_0_7_6_11_i_2/O
+                         net (fo=6, routed)           0.500    13.815    rs_insn_reg_r1_0_7_6_11/ADDRB2
+    SLICE_X38Y32         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.067    13.882 r  rs_insn_reg_r1_0_7_6_11/RAMB/O
+                         net (fo=2, routed)           0.565    14.446    MEM/DI[0]
+    SLICE_X35Y30         LUT4 (Prop_lut4_I3_O)        0.172    14.618 r  MEM/rob_st_addr[0][3]_i_5/O
+                         net (fo=1, routed)           0.000    14.618    MEM/rob_st_addr[0][3]_i_5_n_0
+    SLICE_X35Y30         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.313    14.931 r  MEM/rob_st_addr_reg[0][3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.931    MEM/rob_st_addr_reg[0][3]_i_1_n_0
+    SLICE_X35Y31         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.187    15.118 r  MEM/rob_st_addr_reg[0][7]_i_2/O[3]
+                         net (fo=71, routed)          0.508    15.627    MEM/raddr[7]
+    SLICE_X34Y32         LUT6 (Prop_lut6_I0_O)        0.142    15.769 r  MEM/rs_v1[1][30]_i_135/O
+                         net (fo=1, routed)           0.505    16.274    MEM/rs_v1[1][30]_i_135_n_0
+    SLICE_X33Y32         LUT4 (Prop_lut4_I3_O)        0.053    16.327 r  MEM/rs_v1[1][30]_i_103/O
+                         net (fo=1, routed)           0.228    16.555    MEM/rs_v1[1][30]_i_103_n_0
+    SLICE_X33Y33         LUT6 (Prop_lut6_I3_O)        0.053    16.608 r  MEM/rs_v1[1][30]_i_69/O
+                         net (fo=41, routed)          0.464    17.072    MEM/rs_v1[1][30]_i_69_n_0
+    SLICE_X28Y34         LUT6 (Prop_lut6_I1_O)        0.053    17.125 f  MEM/rs_v1[1][30]_i_101/O
+                         net (fo=2, routed)           0.453    17.579    MEM/rs_v1[1][30]_i_101_n_0
+    SLICE_X30Y33         LUT6 (Prop_lut6_I5_O)        0.053    17.632 r  MEM/rs_v1[1][30]_i_65/O
+                         net (fo=36, routed)          0.613    18.245    MEM/rs_v1[1][30]_i_65_n_0
+    SLICE_X33Y35         LUT6 (Prop_lut6_I4_O)        0.053    18.298 f  MEM/rs_v1[1][31]_i_221/O
+                         net (fo=2, routed)           0.460    18.758    MEM/rs_v1[1][31]_i_221_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I3_O)        0.053    18.811 f  MEM/rs_v1[1][31]_i_177/O
+                         net (fo=6, routed)           0.427    19.238    MEM/rs_v1[1][31]_i_177_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I0_O)        0.053    19.291 r  MEM/rs_v1[1][31]_i_117/O
+                         net (fo=2, routed)           0.237    19.528    MEM/rs_v1[1][31]_i_117_n_0
+    SLICE_X31Y36         LUT6 (Prop_lut6_I5_O)        0.053    19.581 r  MEM/rs_v1[1][31]_i_68/O
+                         net (fo=43, routed)          0.286    19.867    MEM/rs_v1[1][31]_i_68_n_0
+    SLICE_X32Y36         LUT6 (Prop_lut6_I1_O)        0.053    19.920 r  MEM/rs_v1[1][31]_i_119/O
+                         net (fo=1, routed)           0.448    20.369    MEM/rs_v1[1][31]_i_119_n_0
+    SLICE_X33Y37         LUT6 (Prop_lut6_I1_O)        0.053    20.422 r  MEM/rs_v1[1][31]_i_69/O
+                         net (fo=45, routed)          0.491    20.912    MEM/rs_v1[1][31]_i_69_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    20.965 r  MEM/rs_v1[1][31]_i_125/O
+                         net (fo=3, routed)           0.608    21.573    MEM/rs_v1[1][31]_i_125_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I1_O)        0.053    21.626 r  MEM/rs_v1[1][31]_i_70/O
+                         net (fo=36, routed)          0.174    21.800    MEM/rs_v1[1][31]_i_70_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    21.853 f  MEM/rs_v1[1][31]_i_101/O
+                         net (fo=3, routed)           0.816    22.670    MEM/rs_v1[1][31]_i_101_n_0
+    SLICE_X37Y36         LUT6 (Prop_lut6_I0_O)        0.053    22.723 r  MEM/rs_v1[1][31]_i_66/O
+                         net (fo=77, routed)          0.416    23.139    MEM/rs_v1[1][31]_i_66_n_0
+    SLICE_X37Y37         LUT2 (Prop_lut2_I1_O)        0.053    23.192 r  MEM/rs_v1[1][31]_i_100/O
+                         net (fo=2, routed)           0.522    23.715    MEM/rs_v1[1][31]_i_100_n_0
+    SLICE_X36Y36         LUT6 (Prop_lut6_I5_O)        0.053    23.768 r  MEM/rs_v1[1][31]_i_65/O
+                         net (fo=74, routed)          0.376    24.143    MEM/rs_v1[1][31]_i_65_n_0
+    SLICE_X39Y35         LUT6 (Prop_lut6_I4_O)        0.053    24.196 r  MEM/rs_v1[1][31]_i_108/O
+                         net (fo=1, routed)           0.546    24.742    MEM/rs_v1[1][31]_i_108_n_0
+    SLICE_X39Y36         LUT6 (Prop_lut6_I1_O)        0.053    24.795 r  MEM/rs_v1[1][31]_i_67/O
+                         net (fo=70, routed)          0.438    25.233    MEM/rs_v1[1][31]_i_67_n_0
+    SLICE_X40Y37         LUT5 (Prop_lut5_I3_O)        0.053    25.286 f  MEM/rs_v1[1][31]_i_75/O
+                         net (fo=1, routed)           0.563    25.849    MEM/rs_v1[1][31]_i_75_n_0
+    SLICE_X40Y38         LUT6 (Prop_lut6_I3_O)        0.053    25.902 r  MEM/rs_v1[1][31]_i_37/O
+                         net (fo=37, routed)          1.016    26.919    MEM/rs_v1[1][31]_i_37_n_0
+    SLICE_X30Y49         LUT6 (Prop_lut6_I4_O)        0.053    26.972 r  MEM/rs_v1[1][31]_i_16/O
+                         net (fo=13, routed)          0.785    27.757    MEM/rs_v1[1][31]_i_16_n_0
+    SLICE_X18Y51         LUT5 (Prop_lut5_I4_O)        0.053    27.810 r  MEM/rs_v2[1][31]_i_8/O
+                         net (fo=1, routed)           0.311    28.120    MEM/rs_v2[1][31]_i_8_n_0
+    SLICE_X18Y51         LUT6 (Prop_lut6_I5_O)        0.053    28.173 r  MEM/rs_v2[1][31]_i_2/O
+                         net (fo=1, routed)           0.000    28.173    MEM_n_339
+    SLICE_X18Y51         FDRE                                         r  rs_v2_reg[1][31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=3760, unset)         1.291    11.291    clk
+    SLICE_X18Y51         FDRE                                         r  rs_v2_reg[1][31]/C
+                         clock pessimism              0.010    11.301    
+                         clock uncertainty           -0.035    11.266    
+    SLICE_X18Y51         FDRE (Setup_fdre_C_D)        0.071    11.337    rs_v2_reg[1][31]
+  -------------------------------------------------------------------
+                         required time                         11.337    
+                         arrival time                         -28.173    
+  -------------------------------------------------------------------
+                         slack                                -16.837    
+
+Slack (VIOLATED) :        -16.833ns  (required time - arrival time)
+  Source:                 head_reg[0]_rep__4/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_value_reg[13][25]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        26.543ns  (logic 3.535ns (13.318%)  route 23.008ns (86.682%))
+  Logic Levels:           50  (CARRY4=2 LUT1=1 LUT2=2 LUT3=1 LUT4=5 LUT5=2 LUT6=36 RAMD32=1)
+  Clock Path Skew:        -0.290ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.288ns = ( 11.288 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.010ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         1.588     1.588    clk
+    SLICE_X23Y32         FDRE                                         r  head_reg[0]_rep__4/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y32         FDRE (Prop_fdre_C_Q)         0.269     1.857 r  head_reg[0]_rep__4/Q
+                         net (fo=100, routed)         0.826     2.683    MEM/head_reg[2]_rep__1_0
+    SLICE_X20Y32         LUT4 (Prop_lut4_I2_O)        0.053     2.736 r  MEM/rs_valid[1]_i_19/O
+                         net (fo=4, routed)           0.596     3.332    MEM/rs_valid[1]_i_19_n_0
+    SLICE_X19Y33         LUT6 (Prop_lut6_I4_O)        0.053     3.385 f  MEM/rs_insn_reg_r1_0_7_6_11_i_158/O
+                         net (fo=1, routed)           0.417     3.802    MEM/rs_insn_reg_r1_0_7_6_11_i_158_n_0
+    SLICE_X18Y32         LUT6 (Prop_lut6_I0_O)        0.053     3.855 f  MEM/rs_insn_reg_r1_0_7_6_11_i_101/O
+                         net (fo=1, routed)           0.562     4.417    MEM/rs_insn_reg_r1_0_7_6_11_i_101_n_0
+    SLICE_X21Y32         LUT6 (Prop_lut6_I1_O)        0.053     4.470 r  MEM/rs_insn_reg_r1_0_7_6_11_i_67/O
+                         net (fo=12, routed)          0.453     4.923    MEM/rs_insn_reg_r1_0_7_6_11_i_67_n_0
+    SLICE_X19Y32         LUT6 (Prop_lut6_I4_O)        0.053     4.976 r  MEM/rs_valid[1]_i_6/O
+                         net (fo=1, routed)           0.544     5.520    MEM/rs_valid[1]_i_6_n_0
+    SLICE_X17Y32         LUT6 (Prop_lut6_I1_O)        0.053     5.573 r  MEM/rs_valid[1]_i_4/O
+                         net (fo=17, routed)          0.400     5.974    MEM/rs_tag_reg[0][0]
+    SLICE_X17Y33         LUT6 (Prop_lut6_I3_O)        0.053     6.027 f  MEM/rs_insn_reg_r1_0_7_6_11_i_42/O
+                         net (fo=1, routed)           0.442     6.469    MEM/rs_insn_reg_r1_0_7_6_11_i_42_n_0
+    SLICE_X16Y33         LUT6 (Prop_lut6_I4_O)        0.053     6.522 r  MEM/rs_insn_reg_r1_0_7_6_11_i_19/O
+                         net (fo=15, routed)          0.513     7.035    MEM/rs_is_ld_reg[2]
+    SLICE_X16Y35         LUT6 (Prop_lut6_I4_O)        0.053     7.088 r  MEM/rs_valid[6]_i_22/O
+                         net (fo=2, routed)           0.479     7.567    MEM/rs_valid[6]_i_22_n_0
+    SLICE_X16Y35         LUT6 (Prop_lut6_I0_O)        0.053     7.620 r  MEM/rs_insn_reg_r1_0_7_6_11_i_185/O
+                         net (fo=6, routed)           0.353     7.973    MEM/rs_insn_reg_r1_0_7_6_11_i_185_n_0
+    SLICE_X18Y34         LUT6 (Prop_lut6_I3_O)        0.053     8.026 r  MEM/rs_insn_reg_r1_0_7_6_11_i_124/O
+                         net (fo=1, routed)           0.557     8.583    MEM/rs_insn_reg_r1_0_7_6_11_i_124_n_0
+    SLICE_X16Y34         LUT6 (Prop_lut6_I1_O)        0.053     8.636 r  MEM/rs_insn_reg_r1_0_7_6_11_i_85/O
+                         net (fo=1, routed)           0.462     9.098    MEM/rs_insn_reg_r1_0_7_6_11_i_85_n_0
+    SLICE_X20Y35         LUT6 (Prop_lut6_I3_O)        0.053     9.151 f  MEM/rs_insn_reg_r1_0_7_6_11_i_59/O
+                         net (fo=1, routed)           0.412     9.563    MEM/rs_insn_reg_r1_0_7_6_11_i_59_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I0_O)        0.053     9.616 r  MEM/rs_insn_reg_r1_0_7_6_11_i_30/O
+                         net (fo=1, routed)           0.456    10.072    MEM/rs_insn_reg_r1_0_7_6_11_i_30_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I3_O)        0.053    10.125 r  MEM/rs_insn_reg_r1_0_7_6_11_i_17/O
+                         net (fo=11, routed)          0.459    10.584    MEM/rs_is_ld_reg[5]
+    SLICE_X24Y34         LUT3 (Prop_lut3_I1_O)        0.053    10.637 f  MEM/rs_valid[5]_i_13/O
+                         net (fo=5, routed)           0.252    10.889    MEM/rs_valid[5]_i_13_n_0
+    SLICE_X25Y34         LUT2 (Prop_lut2_I1_O)        0.053    10.942 r  MEM/rs_valid[6]_i_6/O
+                         net (fo=1, routed)           0.443    11.385    MEM/rs_valid[6]_i_6_n_0
+    SLICE_X26Y34         LUT6 (Prop_lut6_I2_O)        0.053    11.438 r  MEM/rs_valid[6]_i_2/O
+                         net (fo=7, routed)           0.459    11.897    MEM/rs_tag_reg[6][3]_0
+    SLICE_X27Y34         LUT4 (Prop_lut4_I2_O)        0.053    11.950 r  MEM/rs_valid[5]_i_8/O
+                         net (fo=1, routed)           0.306    12.255    MEM/rs_valid[5]_i_8_n_0
+    SLICE_X27Y34         LUT6 (Prop_lut6_I2_O)        0.053    12.308 r  MEM/rs_valid[5]_i_2/O
+                         net (fo=8, routed)           0.432    12.740    MEM/rs_tag_reg[7][3]
+    SLICE_X31Y33         LUT4 (Prop_lut4_I3_O)        0.053    12.793 f  MEM/rs_insn_reg_r1_0_7_6_11_i_9/O
+                         net (fo=51, routed)          0.469    13.262    MEM_n_1150
+    SLICE_X36Y33         LUT1 (Prop_lut1_I0_O)        0.053    13.315 r  rs_insn_reg_r1_0_7_6_11_i_2/O
+                         net (fo=6, routed)           0.500    13.815    rs_insn_reg_r1_0_7_6_11/ADDRB2
+    SLICE_X38Y32         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.067    13.882 r  rs_insn_reg_r1_0_7_6_11/RAMB/O
+                         net (fo=2, routed)           0.565    14.446    MEM/DI[0]
+    SLICE_X35Y30         LUT4 (Prop_lut4_I3_O)        0.172    14.618 r  MEM/rob_st_addr[0][3]_i_5/O
+                         net (fo=1, routed)           0.000    14.618    MEM/rob_st_addr[0][3]_i_5_n_0
+    SLICE_X35Y30         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.313    14.931 r  MEM/rob_st_addr_reg[0][3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.931    MEM/rob_st_addr_reg[0][3]_i_1_n_0
+    SLICE_X35Y31         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.187    15.118 r  MEM/rob_st_addr_reg[0][7]_i_2/O[3]
+                         net (fo=71, routed)          0.508    15.627    MEM/raddr[7]
+    SLICE_X34Y32         LUT6 (Prop_lut6_I0_O)        0.142    15.769 r  MEM/rs_v1[1][30]_i_135/O
+                         net (fo=1, routed)           0.505    16.274    MEM/rs_v1[1][30]_i_135_n_0
+    SLICE_X33Y32         LUT4 (Prop_lut4_I3_O)        0.053    16.327 r  MEM/rs_v1[1][30]_i_103/O
+                         net (fo=1, routed)           0.228    16.555    MEM/rs_v1[1][30]_i_103_n_0
+    SLICE_X33Y33         LUT6 (Prop_lut6_I3_O)        0.053    16.608 r  MEM/rs_v1[1][30]_i_69/O
+                         net (fo=41, routed)          0.464    17.072    MEM/rs_v1[1][30]_i_69_n_0
+    SLICE_X28Y34         LUT6 (Prop_lut6_I1_O)        0.053    17.125 f  MEM/rs_v1[1][30]_i_101/O
+                         net (fo=2, routed)           0.453    17.579    MEM/rs_v1[1][30]_i_101_n_0
+    SLICE_X30Y33         LUT6 (Prop_lut6_I5_O)        0.053    17.632 r  MEM/rs_v1[1][30]_i_65/O
+                         net (fo=36, routed)          0.613    18.245    MEM/rs_v1[1][30]_i_65_n_0
+    SLICE_X33Y35         LUT6 (Prop_lut6_I4_O)        0.053    18.298 f  MEM/rs_v1[1][31]_i_221/O
+                         net (fo=2, routed)           0.460    18.758    MEM/rs_v1[1][31]_i_221_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I3_O)        0.053    18.811 f  MEM/rs_v1[1][31]_i_177/O
+                         net (fo=6, routed)           0.427    19.238    MEM/rs_v1[1][31]_i_177_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I0_O)        0.053    19.291 r  MEM/rs_v1[1][31]_i_117/O
+                         net (fo=2, routed)           0.237    19.528    MEM/rs_v1[1][31]_i_117_n_0
+    SLICE_X31Y36         LUT6 (Prop_lut6_I5_O)        0.053    19.581 r  MEM/rs_v1[1][31]_i_68/O
+                         net (fo=43, routed)          0.286    19.867    MEM/rs_v1[1][31]_i_68_n_0
+    SLICE_X32Y36         LUT6 (Prop_lut6_I1_O)        0.053    19.920 r  MEM/rs_v1[1][31]_i_119/O
+                         net (fo=1, routed)           0.448    20.369    MEM/rs_v1[1][31]_i_119_n_0
+    SLICE_X33Y37         LUT6 (Prop_lut6_I1_O)        0.053    20.422 r  MEM/rs_v1[1][31]_i_69/O
+                         net (fo=45, routed)          0.491    20.912    MEM/rs_v1[1][31]_i_69_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    20.965 r  MEM/rs_v1[1][31]_i_125/O
+                         net (fo=3, routed)           0.608    21.573    MEM/rs_v1[1][31]_i_125_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I1_O)        0.053    21.626 r  MEM/rs_v1[1][31]_i_70/O
+                         net (fo=36, routed)          0.174    21.800    MEM/rs_v1[1][31]_i_70_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    21.853 f  MEM/rs_v1[1][31]_i_101/O
+                         net (fo=3, routed)           0.816    22.670    MEM/rs_v1[1][31]_i_101_n_0
+    SLICE_X37Y36         LUT6 (Prop_lut6_I0_O)        0.053    22.723 r  MEM/rs_v1[1][31]_i_66/O
+                         net (fo=77, routed)          0.416    23.139    MEM/rs_v1[1][31]_i_66_n_0
+    SLICE_X37Y37         LUT2 (Prop_lut2_I1_O)        0.053    23.192 r  MEM/rs_v1[1][31]_i_100/O
+                         net (fo=2, routed)           0.522    23.715    MEM/rs_v1[1][31]_i_100_n_0
+    SLICE_X36Y36         LUT6 (Prop_lut6_I5_O)        0.053    23.768 r  MEM/rs_v1[1][31]_i_65/O
+                         net (fo=74, routed)          0.376    24.143    MEM/rs_v1[1][31]_i_65_n_0
+    SLICE_X39Y35         LUT6 (Prop_lut6_I4_O)        0.053    24.196 r  MEM/rs_v1[1][31]_i_108/O
+                         net (fo=1, routed)           0.546    24.742    MEM/rs_v1[1][31]_i_108_n_0
+    SLICE_X39Y36         LUT6 (Prop_lut6_I1_O)        0.053    24.795 r  MEM/rs_v1[1][31]_i_67/O
+                         net (fo=70, routed)          0.438    25.233    MEM/rs_v1[1][31]_i_67_n_0
+    SLICE_X40Y37         LUT5 (Prop_lut5_I3_O)        0.053    25.286 f  MEM/rs_v1[1][31]_i_75/O
+                         net (fo=1, routed)           0.563    25.849    MEM/rs_v1[1][31]_i_75_n_0
+    SLICE_X40Y38         LUT6 (Prop_lut6_I3_O)        0.053    25.902 r  MEM/rs_v1[1][31]_i_37/O
+                         net (fo=37, routed)          0.834    26.736    MEM/rs_v1[1][31]_i_37_n_0
+    SLICE_X33Y42         LUT6 (Prop_lut6_I4_O)        0.053    26.789 r  MEM/rs_v1[1][25]_i_8/O
+                         net (fo=14, routed)          0.559    27.348    MEM/rs_v1[1][25]_i_8_n_0
+    SLICE_X27Y49         LUT6 (Prop_lut6_I1_O)        0.053    27.401 r  MEM/rob_value[14][25]_i_2/O
+                         net (fo=16, routed)          0.677    28.078    MEM/rob_value[14][25]_i_2_n_0
+    SLICE_X23Y54         LUT5 (Prop_lut5_I0_O)        0.053    28.131 r  MEM/rob_value[13][25]_i_1/O
+                         net (fo=1, routed)           0.000    28.131    MEM_n_912
+    SLICE_X23Y54         FDRE                                         r  rob_value_reg[13][25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=3760, unset)         1.288    11.288    clk
+    SLICE_X23Y54         FDRE                                         r  rob_value_reg[13][25]/C
+                         clock pessimism              0.010    11.298    
+                         clock uncertainty           -0.035    11.263    
+    SLICE_X23Y54         FDRE (Setup_fdre_C_D)        0.035    11.298    rob_value_reg[13][25]
+  -------------------------------------------------------------------
+                         required time                         11.298    
+                         arrival time                         -28.131    
+  -------------------------------------------------------------------
+                         slack                                -16.833    
+
+Slack (VIOLATED) :        -16.832ns  (required time - arrival time)
+  Source:                 head_reg[0]_rep__4/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rs_v1_reg[1][25]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        26.543ns  (logic 3.535ns (13.318%)  route 23.008ns (86.682%))
+  Logic Levels:           50  (CARRY4=2 LUT1=1 LUT2=2 LUT3=1 LUT4=5 LUT5=1 LUT6=37 RAMD32=1)
+  Clock Path Skew:        -0.289ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.289ns = ( 11.289 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.010ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         1.588     1.588    clk
+    SLICE_X23Y32         FDRE                                         r  head_reg[0]_rep__4/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y32         FDRE (Prop_fdre_C_Q)         0.269     1.857 r  head_reg[0]_rep__4/Q
+                         net (fo=100, routed)         0.826     2.683    MEM/head_reg[2]_rep__1_0
+    SLICE_X20Y32         LUT4 (Prop_lut4_I2_O)        0.053     2.736 r  MEM/rs_valid[1]_i_19/O
+                         net (fo=4, routed)           0.596     3.332    MEM/rs_valid[1]_i_19_n_0
+    SLICE_X19Y33         LUT6 (Prop_lut6_I4_O)        0.053     3.385 f  MEM/rs_insn_reg_r1_0_7_6_11_i_158/O
+                         net (fo=1, routed)           0.417     3.802    MEM/rs_insn_reg_r1_0_7_6_11_i_158_n_0
+    SLICE_X18Y32         LUT6 (Prop_lut6_I0_O)        0.053     3.855 f  MEM/rs_insn_reg_r1_0_7_6_11_i_101/O
+                         net (fo=1, routed)           0.562     4.417    MEM/rs_insn_reg_r1_0_7_6_11_i_101_n_0
+    SLICE_X21Y32         LUT6 (Prop_lut6_I1_O)        0.053     4.470 r  MEM/rs_insn_reg_r1_0_7_6_11_i_67/O
+                         net (fo=12, routed)          0.453     4.923    MEM/rs_insn_reg_r1_0_7_6_11_i_67_n_0
+    SLICE_X19Y32         LUT6 (Prop_lut6_I4_O)        0.053     4.976 r  MEM/rs_valid[1]_i_6/O
+                         net (fo=1, routed)           0.544     5.520    MEM/rs_valid[1]_i_6_n_0
+    SLICE_X17Y32         LUT6 (Prop_lut6_I1_O)        0.053     5.573 r  MEM/rs_valid[1]_i_4/O
+                         net (fo=17, routed)          0.400     5.974    MEM/rs_tag_reg[0][0]
+    SLICE_X17Y33         LUT6 (Prop_lut6_I3_O)        0.053     6.027 f  MEM/rs_insn_reg_r1_0_7_6_11_i_42/O
+                         net (fo=1, routed)           0.442     6.469    MEM/rs_insn_reg_r1_0_7_6_11_i_42_n_0
+    SLICE_X16Y33         LUT6 (Prop_lut6_I4_O)        0.053     6.522 r  MEM/rs_insn_reg_r1_0_7_6_11_i_19/O
+                         net (fo=15, routed)          0.513     7.035    MEM/rs_is_ld_reg[2]
+    SLICE_X16Y35         LUT6 (Prop_lut6_I4_O)        0.053     7.088 r  MEM/rs_valid[6]_i_22/O
+                         net (fo=2, routed)           0.479     7.567    MEM/rs_valid[6]_i_22_n_0
+    SLICE_X16Y35         LUT6 (Prop_lut6_I0_O)        0.053     7.620 r  MEM/rs_insn_reg_r1_0_7_6_11_i_185/O
+                         net (fo=6, routed)           0.353     7.973    MEM/rs_insn_reg_r1_0_7_6_11_i_185_n_0
+    SLICE_X18Y34         LUT6 (Prop_lut6_I3_O)        0.053     8.026 r  MEM/rs_insn_reg_r1_0_7_6_11_i_124/O
+                         net (fo=1, routed)           0.557     8.583    MEM/rs_insn_reg_r1_0_7_6_11_i_124_n_0
+    SLICE_X16Y34         LUT6 (Prop_lut6_I1_O)        0.053     8.636 r  MEM/rs_insn_reg_r1_0_7_6_11_i_85/O
+                         net (fo=1, routed)           0.462     9.098    MEM/rs_insn_reg_r1_0_7_6_11_i_85_n_0
+    SLICE_X20Y35         LUT6 (Prop_lut6_I3_O)        0.053     9.151 f  MEM/rs_insn_reg_r1_0_7_6_11_i_59/O
+                         net (fo=1, routed)           0.412     9.563    MEM/rs_insn_reg_r1_0_7_6_11_i_59_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I0_O)        0.053     9.616 r  MEM/rs_insn_reg_r1_0_7_6_11_i_30/O
+                         net (fo=1, routed)           0.456    10.072    MEM/rs_insn_reg_r1_0_7_6_11_i_30_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I3_O)        0.053    10.125 r  MEM/rs_insn_reg_r1_0_7_6_11_i_17/O
+                         net (fo=11, routed)          0.459    10.584    MEM/rs_is_ld_reg[5]
+    SLICE_X24Y34         LUT3 (Prop_lut3_I1_O)        0.053    10.637 f  MEM/rs_valid[5]_i_13/O
+                         net (fo=5, routed)           0.252    10.889    MEM/rs_valid[5]_i_13_n_0
+    SLICE_X25Y34         LUT2 (Prop_lut2_I1_O)        0.053    10.942 r  MEM/rs_valid[6]_i_6/O
+                         net (fo=1, routed)           0.443    11.385    MEM/rs_valid[6]_i_6_n_0
+    SLICE_X26Y34         LUT6 (Prop_lut6_I2_O)        0.053    11.438 r  MEM/rs_valid[6]_i_2/O
+                         net (fo=7, routed)           0.459    11.897    MEM/rs_tag_reg[6][3]_0
+    SLICE_X27Y34         LUT4 (Prop_lut4_I2_O)        0.053    11.950 r  MEM/rs_valid[5]_i_8/O
+                         net (fo=1, routed)           0.306    12.255    MEM/rs_valid[5]_i_8_n_0
+    SLICE_X27Y34         LUT6 (Prop_lut6_I2_O)        0.053    12.308 r  MEM/rs_valid[5]_i_2/O
+                         net (fo=8, routed)           0.432    12.740    MEM/rs_tag_reg[7][3]
+    SLICE_X31Y33         LUT4 (Prop_lut4_I3_O)        0.053    12.793 f  MEM/rs_insn_reg_r1_0_7_6_11_i_9/O
+                         net (fo=51, routed)          0.469    13.262    MEM_n_1150
+    SLICE_X36Y33         LUT1 (Prop_lut1_I0_O)        0.053    13.315 r  rs_insn_reg_r1_0_7_6_11_i_2/O
+                         net (fo=6, routed)           0.500    13.815    rs_insn_reg_r1_0_7_6_11/ADDRB2
+    SLICE_X38Y32         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.067    13.882 r  rs_insn_reg_r1_0_7_6_11/RAMB/O
+                         net (fo=2, routed)           0.565    14.446    MEM/DI[0]
+    SLICE_X35Y30         LUT4 (Prop_lut4_I3_O)        0.172    14.618 r  MEM/rob_st_addr[0][3]_i_5/O
+                         net (fo=1, routed)           0.000    14.618    MEM/rob_st_addr[0][3]_i_5_n_0
+    SLICE_X35Y30         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.313    14.931 r  MEM/rob_st_addr_reg[0][3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.931    MEM/rob_st_addr_reg[0][3]_i_1_n_0
+    SLICE_X35Y31         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.187    15.118 r  MEM/rob_st_addr_reg[0][7]_i_2/O[3]
+                         net (fo=71, routed)          0.508    15.627    MEM/raddr[7]
+    SLICE_X34Y32         LUT6 (Prop_lut6_I0_O)        0.142    15.769 r  MEM/rs_v1[1][30]_i_135/O
+                         net (fo=1, routed)           0.505    16.274    MEM/rs_v1[1][30]_i_135_n_0
+    SLICE_X33Y32         LUT4 (Prop_lut4_I3_O)        0.053    16.327 r  MEM/rs_v1[1][30]_i_103/O
+                         net (fo=1, routed)           0.228    16.555    MEM/rs_v1[1][30]_i_103_n_0
+    SLICE_X33Y33         LUT6 (Prop_lut6_I3_O)        0.053    16.608 r  MEM/rs_v1[1][30]_i_69/O
+                         net (fo=41, routed)          0.464    17.072    MEM/rs_v1[1][30]_i_69_n_0
+    SLICE_X28Y34         LUT6 (Prop_lut6_I1_O)        0.053    17.125 f  MEM/rs_v1[1][30]_i_101/O
+                         net (fo=2, routed)           0.453    17.579    MEM/rs_v1[1][30]_i_101_n_0
+    SLICE_X30Y33         LUT6 (Prop_lut6_I5_O)        0.053    17.632 r  MEM/rs_v1[1][30]_i_65/O
+                         net (fo=36, routed)          0.613    18.245    MEM/rs_v1[1][30]_i_65_n_0
+    SLICE_X33Y35         LUT6 (Prop_lut6_I4_O)        0.053    18.298 f  MEM/rs_v1[1][31]_i_221/O
+                         net (fo=2, routed)           0.460    18.758    MEM/rs_v1[1][31]_i_221_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I3_O)        0.053    18.811 f  MEM/rs_v1[1][31]_i_177/O
+                         net (fo=6, routed)           0.427    19.238    MEM/rs_v1[1][31]_i_177_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I0_O)        0.053    19.291 r  MEM/rs_v1[1][31]_i_117/O
+                         net (fo=2, routed)           0.237    19.528    MEM/rs_v1[1][31]_i_117_n_0
+    SLICE_X31Y36         LUT6 (Prop_lut6_I5_O)        0.053    19.581 r  MEM/rs_v1[1][31]_i_68/O
+                         net (fo=43, routed)          0.286    19.867    MEM/rs_v1[1][31]_i_68_n_0
+    SLICE_X32Y36         LUT6 (Prop_lut6_I1_O)        0.053    19.920 r  MEM/rs_v1[1][31]_i_119/O
+                         net (fo=1, routed)           0.448    20.369    MEM/rs_v1[1][31]_i_119_n_0
+    SLICE_X33Y37         LUT6 (Prop_lut6_I1_O)        0.053    20.422 r  MEM/rs_v1[1][31]_i_69/O
+                         net (fo=45, routed)          0.491    20.912    MEM/rs_v1[1][31]_i_69_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    20.965 r  MEM/rs_v1[1][31]_i_125/O
+                         net (fo=3, routed)           0.608    21.573    MEM/rs_v1[1][31]_i_125_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I1_O)        0.053    21.626 r  MEM/rs_v1[1][31]_i_70/O
+                         net (fo=36, routed)          0.174    21.800    MEM/rs_v1[1][31]_i_70_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    21.853 f  MEM/rs_v1[1][31]_i_101/O
+                         net (fo=3, routed)           0.816    22.670    MEM/rs_v1[1][31]_i_101_n_0
+    SLICE_X37Y36         LUT6 (Prop_lut6_I0_O)        0.053    22.723 r  MEM/rs_v1[1][31]_i_66/O
+                         net (fo=77, routed)          0.416    23.139    MEM/rs_v1[1][31]_i_66_n_0
+    SLICE_X37Y37         LUT2 (Prop_lut2_I1_O)        0.053    23.192 r  MEM/rs_v1[1][31]_i_100/O
+                         net (fo=2, routed)           0.522    23.715    MEM/rs_v1[1][31]_i_100_n_0
+    SLICE_X36Y36         LUT6 (Prop_lut6_I5_O)        0.053    23.768 r  MEM/rs_v1[1][31]_i_65/O
+                         net (fo=74, routed)          0.376    24.143    MEM/rs_v1[1][31]_i_65_n_0
+    SLICE_X39Y35         LUT6 (Prop_lut6_I4_O)        0.053    24.196 r  MEM/rs_v1[1][31]_i_108/O
+                         net (fo=1, routed)           0.546    24.742    MEM/rs_v1[1][31]_i_108_n_0
+    SLICE_X39Y36         LUT6 (Prop_lut6_I1_O)        0.053    24.795 r  MEM/rs_v1[1][31]_i_67/O
+                         net (fo=70, routed)          0.438    25.233    MEM/rs_v1[1][31]_i_67_n_0
+    SLICE_X40Y37         LUT5 (Prop_lut5_I3_O)        0.053    25.286 f  MEM/rs_v1[1][31]_i_75/O
+                         net (fo=1, routed)           0.563    25.849    MEM/rs_v1[1][31]_i_75_n_0
+    SLICE_X40Y38         LUT6 (Prop_lut6_I3_O)        0.053    25.902 r  MEM/rs_v1[1][31]_i_37/O
+                         net (fo=37, routed)          0.834    26.736    MEM/rs_v1[1][31]_i_37_n_0
+    SLICE_X33Y42         LUT6 (Prop_lut6_I4_O)        0.053    26.789 r  MEM/rs_v1[1][25]_i_8/O
+                         net (fo=14, routed)          0.727    27.516    MEM/rs_v1[1][25]_i_8_n_0
+    SLICE_X23Y50         LUT6 (Prop_lut6_I3_O)        0.053    27.569 r  MEM/rs_v1[1][25]_i_2/O
+                         net (fo=7, routed)           0.509    28.078    MEM/rs_v1[1][25]_i_2_n_0
+    SLICE_X23Y51         LUT6 (Prop_lut6_I0_O)        0.053    28.131 r  MEM/rs_v1[1][25]_i_1/O
+                         net (fo=1, routed)           0.000    28.131    MEM_n_38
+    SLICE_X23Y51         FDRE                                         r  rs_v1_reg[1][25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=3760, unset)         1.289    11.289    clk
+    SLICE_X23Y51         FDRE                                         r  rs_v1_reg[1][25]/C
+                         clock pessimism              0.010    11.299    
+                         clock uncertainty           -0.035    11.264    
+    SLICE_X23Y51         FDRE (Setup_fdre_C_D)        0.035    11.299    rs_v1_reg[1][25]
+  -------------------------------------------------------------------
+                         required time                         11.299    
+                         arrival time                         -28.131    
+  -------------------------------------------------------------------
+                         slack                                -16.832    
+
+Slack (VIOLATED) :        -16.824ns  (required time - arrival time)
+  Source:                 head_reg[0]_rep__4/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rs_v1_reg[5][25]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        26.574ns  (logic 3.535ns (13.302%)  route 23.039ns (86.698%))
+  Logic Levels:           50  (CARRY4=2 LUT1=1 LUT2=2 LUT3=1 LUT4=5 LUT5=1 LUT6=37 RAMD32=1)
+  Clock Path Skew:        -0.288ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.290ns = ( 11.290 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.010ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         1.588     1.588    clk
+    SLICE_X23Y32         FDRE                                         r  head_reg[0]_rep__4/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y32         FDRE (Prop_fdre_C_Q)         0.269     1.857 r  head_reg[0]_rep__4/Q
+                         net (fo=100, routed)         0.826     2.683    MEM/head_reg[2]_rep__1_0
+    SLICE_X20Y32         LUT4 (Prop_lut4_I2_O)        0.053     2.736 r  MEM/rs_valid[1]_i_19/O
+                         net (fo=4, routed)           0.596     3.332    MEM/rs_valid[1]_i_19_n_0
+    SLICE_X19Y33         LUT6 (Prop_lut6_I4_O)        0.053     3.385 f  MEM/rs_insn_reg_r1_0_7_6_11_i_158/O
+                         net (fo=1, routed)           0.417     3.802    MEM/rs_insn_reg_r1_0_7_6_11_i_158_n_0
+    SLICE_X18Y32         LUT6 (Prop_lut6_I0_O)        0.053     3.855 f  MEM/rs_insn_reg_r1_0_7_6_11_i_101/O
+                         net (fo=1, routed)           0.562     4.417    MEM/rs_insn_reg_r1_0_7_6_11_i_101_n_0
+    SLICE_X21Y32         LUT6 (Prop_lut6_I1_O)        0.053     4.470 r  MEM/rs_insn_reg_r1_0_7_6_11_i_67/O
+                         net (fo=12, routed)          0.453     4.923    MEM/rs_insn_reg_r1_0_7_6_11_i_67_n_0
+    SLICE_X19Y32         LUT6 (Prop_lut6_I4_O)        0.053     4.976 r  MEM/rs_valid[1]_i_6/O
+                         net (fo=1, routed)           0.544     5.520    MEM/rs_valid[1]_i_6_n_0
+    SLICE_X17Y32         LUT6 (Prop_lut6_I1_O)        0.053     5.573 r  MEM/rs_valid[1]_i_4/O
+                         net (fo=17, routed)          0.400     5.974    MEM/rs_tag_reg[0][0]
+    SLICE_X17Y33         LUT6 (Prop_lut6_I3_O)        0.053     6.027 f  MEM/rs_insn_reg_r1_0_7_6_11_i_42/O
+                         net (fo=1, routed)           0.442     6.469    MEM/rs_insn_reg_r1_0_7_6_11_i_42_n_0
+    SLICE_X16Y33         LUT6 (Prop_lut6_I4_O)        0.053     6.522 r  MEM/rs_insn_reg_r1_0_7_6_11_i_19/O
+                         net (fo=15, routed)          0.513     7.035    MEM/rs_is_ld_reg[2]
+    SLICE_X16Y35         LUT6 (Prop_lut6_I4_O)        0.053     7.088 r  MEM/rs_valid[6]_i_22/O
+                         net (fo=2, routed)           0.479     7.567    MEM/rs_valid[6]_i_22_n_0
+    SLICE_X16Y35         LUT6 (Prop_lut6_I0_O)        0.053     7.620 r  MEM/rs_insn_reg_r1_0_7_6_11_i_185/O
+                         net (fo=6, routed)           0.353     7.973    MEM/rs_insn_reg_r1_0_7_6_11_i_185_n_0
+    SLICE_X18Y34         LUT6 (Prop_lut6_I3_O)        0.053     8.026 r  MEM/rs_insn_reg_r1_0_7_6_11_i_124/O
+                         net (fo=1, routed)           0.557     8.583    MEM/rs_insn_reg_r1_0_7_6_11_i_124_n_0
+    SLICE_X16Y34         LUT6 (Prop_lut6_I1_O)        0.053     8.636 r  MEM/rs_insn_reg_r1_0_7_6_11_i_85/O
+                         net (fo=1, routed)           0.462     9.098    MEM/rs_insn_reg_r1_0_7_6_11_i_85_n_0
+    SLICE_X20Y35         LUT6 (Prop_lut6_I3_O)        0.053     9.151 f  MEM/rs_insn_reg_r1_0_7_6_11_i_59/O
+                         net (fo=1, routed)           0.412     9.563    MEM/rs_insn_reg_r1_0_7_6_11_i_59_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I0_O)        0.053     9.616 r  MEM/rs_insn_reg_r1_0_7_6_11_i_30/O
+                         net (fo=1, routed)           0.456    10.072    MEM/rs_insn_reg_r1_0_7_6_11_i_30_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I3_O)        0.053    10.125 r  MEM/rs_insn_reg_r1_0_7_6_11_i_17/O
+                         net (fo=11, routed)          0.459    10.584    MEM/rs_is_ld_reg[5]
+    SLICE_X24Y34         LUT3 (Prop_lut3_I1_O)        0.053    10.637 f  MEM/rs_valid[5]_i_13/O
+                         net (fo=5, routed)           0.252    10.889    MEM/rs_valid[5]_i_13_n_0
+    SLICE_X25Y34         LUT2 (Prop_lut2_I1_O)        0.053    10.942 r  MEM/rs_valid[6]_i_6/O
+                         net (fo=1, routed)           0.443    11.385    MEM/rs_valid[6]_i_6_n_0
+    SLICE_X26Y34         LUT6 (Prop_lut6_I2_O)        0.053    11.438 r  MEM/rs_valid[6]_i_2/O
+                         net (fo=7, routed)           0.459    11.897    MEM/rs_tag_reg[6][3]_0
+    SLICE_X27Y34         LUT4 (Prop_lut4_I2_O)        0.053    11.950 r  MEM/rs_valid[5]_i_8/O
+                         net (fo=1, routed)           0.306    12.255    MEM/rs_valid[5]_i_8_n_0
+    SLICE_X27Y34         LUT6 (Prop_lut6_I2_O)        0.053    12.308 r  MEM/rs_valid[5]_i_2/O
+                         net (fo=8, routed)           0.432    12.740    MEM/rs_tag_reg[7][3]
+    SLICE_X31Y33         LUT4 (Prop_lut4_I3_O)        0.053    12.793 f  MEM/rs_insn_reg_r1_0_7_6_11_i_9/O
+                         net (fo=51, routed)          0.469    13.262    MEM_n_1150
+    SLICE_X36Y33         LUT1 (Prop_lut1_I0_O)        0.053    13.315 r  rs_insn_reg_r1_0_7_6_11_i_2/O
+                         net (fo=6, routed)           0.500    13.815    rs_insn_reg_r1_0_7_6_11/ADDRB2
+    SLICE_X38Y32         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.067    13.882 r  rs_insn_reg_r1_0_7_6_11/RAMB/O
+                         net (fo=2, routed)           0.565    14.446    MEM/DI[0]
+    SLICE_X35Y30         LUT4 (Prop_lut4_I3_O)        0.172    14.618 r  MEM/rob_st_addr[0][3]_i_5/O
+                         net (fo=1, routed)           0.000    14.618    MEM/rob_st_addr[0][3]_i_5_n_0
+    SLICE_X35Y30         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.313    14.931 r  MEM/rob_st_addr_reg[0][3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.931    MEM/rob_st_addr_reg[0][3]_i_1_n_0
+    SLICE_X35Y31         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.187    15.118 r  MEM/rob_st_addr_reg[0][7]_i_2/O[3]
+                         net (fo=71, routed)          0.508    15.627    MEM/raddr[7]
+    SLICE_X34Y32         LUT6 (Prop_lut6_I0_O)        0.142    15.769 r  MEM/rs_v1[1][30]_i_135/O
+                         net (fo=1, routed)           0.505    16.274    MEM/rs_v1[1][30]_i_135_n_0
+    SLICE_X33Y32         LUT4 (Prop_lut4_I3_O)        0.053    16.327 r  MEM/rs_v1[1][30]_i_103/O
+                         net (fo=1, routed)           0.228    16.555    MEM/rs_v1[1][30]_i_103_n_0
+    SLICE_X33Y33         LUT6 (Prop_lut6_I3_O)        0.053    16.608 r  MEM/rs_v1[1][30]_i_69/O
+                         net (fo=41, routed)          0.464    17.072    MEM/rs_v1[1][30]_i_69_n_0
+    SLICE_X28Y34         LUT6 (Prop_lut6_I1_O)        0.053    17.125 f  MEM/rs_v1[1][30]_i_101/O
+                         net (fo=2, routed)           0.453    17.579    MEM/rs_v1[1][30]_i_101_n_0
+    SLICE_X30Y33         LUT6 (Prop_lut6_I5_O)        0.053    17.632 r  MEM/rs_v1[1][30]_i_65/O
+                         net (fo=36, routed)          0.613    18.245    MEM/rs_v1[1][30]_i_65_n_0
+    SLICE_X33Y35         LUT6 (Prop_lut6_I4_O)        0.053    18.298 f  MEM/rs_v1[1][31]_i_221/O
+                         net (fo=2, routed)           0.460    18.758    MEM/rs_v1[1][31]_i_221_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I3_O)        0.053    18.811 f  MEM/rs_v1[1][31]_i_177/O
+                         net (fo=6, routed)           0.427    19.238    MEM/rs_v1[1][31]_i_177_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I0_O)        0.053    19.291 r  MEM/rs_v1[1][31]_i_117/O
+                         net (fo=2, routed)           0.237    19.528    MEM/rs_v1[1][31]_i_117_n_0
+    SLICE_X31Y36         LUT6 (Prop_lut6_I5_O)        0.053    19.581 r  MEM/rs_v1[1][31]_i_68/O
+                         net (fo=43, routed)          0.286    19.867    MEM/rs_v1[1][31]_i_68_n_0
+    SLICE_X32Y36         LUT6 (Prop_lut6_I1_O)        0.053    19.920 r  MEM/rs_v1[1][31]_i_119/O
+                         net (fo=1, routed)           0.448    20.369    MEM/rs_v1[1][31]_i_119_n_0
+    SLICE_X33Y37         LUT6 (Prop_lut6_I1_O)        0.053    20.422 r  MEM/rs_v1[1][31]_i_69/O
+                         net (fo=45, routed)          0.491    20.912    MEM/rs_v1[1][31]_i_69_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    20.965 r  MEM/rs_v1[1][31]_i_125/O
+                         net (fo=3, routed)           0.608    21.573    MEM/rs_v1[1][31]_i_125_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I1_O)        0.053    21.626 r  MEM/rs_v1[1][31]_i_70/O
+                         net (fo=36, routed)          0.174    21.800    MEM/rs_v1[1][31]_i_70_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    21.853 f  MEM/rs_v1[1][31]_i_101/O
+                         net (fo=3, routed)           0.816    22.670    MEM/rs_v1[1][31]_i_101_n_0
+    SLICE_X37Y36         LUT6 (Prop_lut6_I0_O)        0.053    22.723 r  MEM/rs_v1[1][31]_i_66/O
+                         net (fo=77, routed)          0.416    23.139    MEM/rs_v1[1][31]_i_66_n_0
+    SLICE_X37Y37         LUT2 (Prop_lut2_I1_O)        0.053    23.192 r  MEM/rs_v1[1][31]_i_100/O
+                         net (fo=2, routed)           0.522    23.715    MEM/rs_v1[1][31]_i_100_n_0
+    SLICE_X36Y36         LUT6 (Prop_lut6_I5_O)        0.053    23.768 r  MEM/rs_v1[1][31]_i_65/O
+                         net (fo=74, routed)          0.376    24.143    MEM/rs_v1[1][31]_i_65_n_0
+    SLICE_X39Y35         LUT6 (Prop_lut6_I4_O)        0.053    24.196 r  MEM/rs_v1[1][31]_i_108/O
+                         net (fo=1, routed)           0.546    24.742    MEM/rs_v1[1][31]_i_108_n_0
+    SLICE_X39Y36         LUT6 (Prop_lut6_I1_O)        0.053    24.795 r  MEM/rs_v1[1][31]_i_67/O
+                         net (fo=70, routed)          0.438    25.233    MEM/rs_v1[1][31]_i_67_n_0
+    SLICE_X40Y37         LUT5 (Prop_lut5_I3_O)        0.053    25.286 f  MEM/rs_v1[1][31]_i_75/O
+                         net (fo=1, routed)           0.563    25.849    MEM/rs_v1[1][31]_i_75_n_0
+    SLICE_X40Y38         LUT6 (Prop_lut6_I3_O)        0.053    25.902 r  MEM/rs_v1[1][31]_i_37/O
+                         net (fo=37, routed)          0.834    26.736    MEM/rs_v1[1][31]_i_37_n_0
+    SLICE_X33Y42         LUT6 (Prop_lut6_I4_O)        0.053    26.789 r  MEM/rs_v1[1][25]_i_8/O
+                         net (fo=14, routed)          0.727    27.516    MEM/rs_v1[1][25]_i_8_n_0
+    SLICE_X23Y50         LUT6 (Prop_lut6_I3_O)        0.053    27.569 r  MEM/rs_v1[1][25]_i_2/O
+                         net (fo=7, routed)           0.540    28.109    MEM/rs_v1[1][25]_i_2_n_0
+    SLICE_X20Y51         LUT6 (Prop_lut6_I0_O)        0.053    28.162 r  MEM/rs_v1[5][25]_i_1/O
+                         net (fo=1, routed)           0.000    28.162    MEM_n_174
+    SLICE_X20Y51         FDRE                                         r  rs_v1_reg[5][25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=3760, unset)         1.290    11.290    clk
+    SLICE_X20Y51         FDRE                                         r  rs_v1_reg[5][25]/C
+                         clock pessimism              0.010    11.300    
+                         clock uncertainty           -0.035    11.265    
+    SLICE_X20Y51         FDRE (Setup_fdre_C_D)        0.073    11.338    rs_v1_reg[5][25]
+  -------------------------------------------------------------------
+                         required time                         11.338    
+                         arrival time                         -28.162    
+  -------------------------------------------------------------------
+                         slack                                -16.824    
+
+Slack (VIOLATED) :        -16.813ns  (required time - arrival time)
+  Source:                 head_reg[0]_rep__4/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rs_v2_reg[4][31]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        26.560ns  (logic 3.535ns (13.310%)  route 23.025ns (86.691%))
+  Logic Levels:           50  (CARRY4=2 LUT1=1 LUT2=2 LUT3=1 LUT4=5 LUT5=1 LUT6=37 RAMD32=1)
+  Clock Path Skew:        -0.289ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.289ns = ( 11.289 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.010ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         1.588     1.588    clk
+    SLICE_X23Y32         FDRE                                         r  head_reg[0]_rep__4/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y32         FDRE (Prop_fdre_C_Q)         0.269     1.857 r  head_reg[0]_rep__4/Q
+                         net (fo=100, routed)         0.826     2.683    MEM/head_reg[2]_rep__1_0
+    SLICE_X20Y32         LUT4 (Prop_lut4_I2_O)        0.053     2.736 r  MEM/rs_valid[1]_i_19/O
+                         net (fo=4, routed)           0.596     3.332    MEM/rs_valid[1]_i_19_n_0
+    SLICE_X19Y33         LUT6 (Prop_lut6_I4_O)        0.053     3.385 f  MEM/rs_insn_reg_r1_0_7_6_11_i_158/O
+                         net (fo=1, routed)           0.417     3.802    MEM/rs_insn_reg_r1_0_7_6_11_i_158_n_0
+    SLICE_X18Y32         LUT6 (Prop_lut6_I0_O)        0.053     3.855 f  MEM/rs_insn_reg_r1_0_7_6_11_i_101/O
+                         net (fo=1, routed)           0.562     4.417    MEM/rs_insn_reg_r1_0_7_6_11_i_101_n_0
+    SLICE_X21Y32         LUT6 (Prop_lut6_I1_O)        0.053     4.470 r  MEM/rs_insn_reg_r1_0_7_6_11_i_67/O
+                         net (fo=12, routed)          0.453     4.923    MEM/rs_insn_reg_r1_0_7_6_11_i_67_n_0
+    SLICE_X19Y32         LUT6 (Prop_lut6_I4_O)        0.053     4.976 r  MEM/rs_valid[1]_i_6/O
+                         net (fo=1, routed)           0.544     5.520    MEM/rs_valid[1]_i_6_n_0
+    SLICE_X17Y32         LUT6 (Prop_lut6_I1_O)        0.053     5.573 r  MEM/rs_valid[1]_i_4/O
+                         net (fo=17, routed)          0.400     5.974    MEM/rs_tag_reg[0][0]
+    SLICE_X17Y33         LUT6 (Prop_lut6_I3_O)        0.053     6.027 f  MEM/rs_insn_reg_r1_0_7_6_11_i_42/O
+                         net (fo=1, routed)           0.442     6.469    MEM/rs_insn_reg_r1_0_7_6_11_i_42_n_0
+    SLICE_X16Y33         LUT6 (Prop_lut6_I4_O)        0.053     6.522 r  MEM/rs_insn_reg_r1_0_7_6_11_i_19/O
+                         net (fo=15, routed)          0.513     7.035    MEM/rs_is_ld_reg[2]
+    SLICE_X16Y35         LUT6 (Prop_lut6_I4_O)        0.053     7.088 r  MEM/rs_valid[6]_i_22/O
+                         net (fo=2, routed)           0.479     7.567    MEM/rs_valid[6]_i_22_n_0
+    SLICE_X16Y35         LUT6 (Prop_lut6_I0_O)        0.053     7.620 r  MEM/rs_insn_reg_r1_0_7_6_11_i_185/O
+                         net (fo=6, routed)           0.353     7.973    MEM/rs_insn_reg_r1_0_7_6_11_i_185_n_0
+    SLICE_X18Y34         LUT6 (Prop_lut6_I3_O)        0.053     8.026 r  MEM/rs_insn_reg_r1_0_7_6_11_i_124/O
+                         net (fo=1, routed)           0.557     8.583    MEM/rs_insn_reg_r1_0_7_6_11_i_124_n_0
+    SLICE_X16Y34         LUT6 (Prop_lut6_I1_O)        0.053     8.636 r  MEM/rs_insn_reg_r1_0_7_6_11_i_85/O
+                         net (fo=1, routed)           0.462     9.098    MEM/rs_insn_reg_r1_0_7_6_11_i_85_n_0
+    SLICE_X20Y35         LUT6 (Prop_lut6_I3_O)        0.053     9.151 f  MEM/rs_insn_reg_r1_0_7_6_11_i_59/O
+                         net (fo=1, routed)           0.412     9.563    MEM/rs_insn_reg_r1_0_7_6_11_i_59_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I0_O)        0.053     9.616 r  MEM/rs_insn_reg_r1_0_7_6_11_i_30/O
+                         net (fo=1, routed)           0.456    10.072    MEM/rs_insn_reg_r1_0_7_6_11_i_30_n_0
+    SLICE_X23Y34         LUT6 (Prop_lut6_I3_O)        0.053    10.125 r  MEM/rs_insn_reg_r1_0_7_6_11_i_17/O
+                         net (fo=11, routed)          0.459    10.584    MEM/rs_is_ld_reg[5]
+    SLICE_X24Y34         LUT3 (Prop_lut3_I1_O)        0.053    10.637 f  MEM/rs_valid[5]_i_13/O
+                         net (fo=5, routed)           0.252    10.889    MEM/rs_valid[5]_i_13_n_0
+    SLICE_X25Y34         LUT2 (Prop_lut2_I1_O)        0.053    10.942 r  MEM/rs_valid[6]_i_6/O
+                         net (fo=1, routed)           0.443    11.385    MEM/rs_valid[6]_i_6_n_0
+    SLICE_X26Y34         LUT6 (Prop_lut6_I2_O)        0.053    11.438 r  MEM/rs_valid[6]_i_2/O
+                         net (fo=7, routed)           0.459    11.897    MEM/rs_tag_reg[6][3]_0
+    SLICE_X27Y34         LUT4 (Prop_lut4_I2_O)        0.053    11.950 r  MEM/rs_valid[5]_i_8/O
+                         net (fo=1, routed)           0.306    12.255    MEM/rs_valid[5]_i_8_n_0
+    SLICE_X27Y34         LUT6 (Prop_lut6_I2_O)        0.053    12.308 r  MEM/rs_valid[5]_i_2/O
+                         net (fo=8, routed)           0.432    12.740    MEM/rs_tag_reg[7][3]
+    SLICE_X31Y33         LUT4 (Prop_lut4_I3_O)        0.053    12.793 f  MEM/rs_insn_reg_r1_0_7_6_11_i_9/O
+                         net (fo=51, routed)          0.469    13.262    MEM_n_1150
+    SLICE_X36Y33         LUT1 (Prop_lut1_I0_O)        0.053    13.315 r  rs_insn_reg_r1_0_7_6_11_i_2/O
+                         net (fo=6, routed)           0.500    13.815    rs_insn_reg_r1_0_7_6_11/ADDRB2
+    SLICE_X38Y32         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.067    13.882 r  rs_insn_reg_r1_0_7_6_11/RAMB/O
+                         net (fo=2, routed)           0.565    14.446    MEM/DI[0]
+    SLICE_X35Y30         LUT4 (Prop_lut4_I3_O)        0.172    14.618 r  MEM/rob_st_addr[0][3]_i_5/O
+                         net (fo=1, routed)           0.000    14.618    MEM/rob_st_addr[0][3]_i_5_n_0
+    SLICE_X35Y30         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.313    14.931 r  MEM/rob_st_addr_reg[0][3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.931    MEM/rob_st_addr_reg[0][3]_i_1_n_0
+    SLICE_X35Y31         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.187    15.118 r  MEM/rob_st_addr_reg[0][7]_i_2/O[3]
+                         net (fo=71, routed)          0.508    15.627    MEM/raddr[7]
+    SLICE_X34Y32         LUT6 (Prop_lut6_I0_O)        0.142    15.769 r  MEM/rs_v1[1][30]_i_135/O
+                         net (fo=1, routed)           0.505    16.274    MEM/rs_v1[1][30]_i_135_n_0
+    SLICE_X33Y32         LUT4 (Prop_lut4_I3_O)        0.053    16.327 r  MEM/rs_v1[1][30]_i_103/O
+                         net (fo=1, routed)           0.228    16.555    MEM/rs_v1[1][30]_i_103_n_0
+    SLICE_X33Y33         LUT6 (Prop_lut6_I3_O)        0.053    16.608 r  MEM/rs_v1[1][30]_i_69/O
+                         net (fo=41, routed)          0.464    17.072    MEM/rs_v1[1][30]_i_69_n_0
+    SLICE_X28Y34         LUT6 (Prop_lut6_I1_O)        0.053    17.125 f  MEM/rs_v1[1][30]_i_101/O
+                         net (fo=2, routed)           0.453    17.579    MEM/rs_v1[1][30]_i_101_n_0
+    SLICE_X30Y33         LUT6 (Prop_lut6_I5_O)        0.053    17.632 r  MEM/rs_v1[1][30]_i_65/O
+                         net (fo=36, routed)          0.613    18.245    MEM/rs_v1[1][30]_i_65_n_0
+    SLICE_X33Y35         LUT6 (Prop_lut6_I4_O)        0.053    18.298 f  MEM/rs_v1[1][31]_i_221/O
+                         net (fo=2, routed)           0.460    18.758    MEM/rs_v1[1][31]_i_221_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I3_O)        0.053    18.811 f  MEM/rs_v1[1][31]_i_177/O
+                         net (fo=6, routed)           0.427    19.238    MEM/rs_v1[1][31]_i_177_n_0
+    SLICE_X29Y36         LUT6 (Prop_lut6_I0_O)        0.053    19.291 r  MEM/rs_v1[1][31]_i_117/O
+                         net (fo=2, routed)           0.237    19.528    MEM/rs_v1[1][31]_i_117_n_0
+    SLICE_X31Y36         LUT6 (Prop_lut6_I5_O)        0.053    19.581 r  MEM/rs_v1[1][31]_i_68/O
+                         net (fo=43, routed)          0.286    19.867    MEM/rs_v1[1][31]_i_68_n_0
+    SLICE_X32Y36         LUT6 (Prop_lut6_I1_O)        0.053    19.920 r  MEM/rs_v1[1][31]_i_119/O
+                         net (fo=1, routed)           0.448    20.369    MEM/rs_v1[1][31]_i_119_n_0
+    SLICE_X33Y37         LUT6 (Prop_lut6_I1_O)        0.053    20.422 r  MEM/rs_v1[1][31]_i_69/O
+                         net (fo=45, routed)          0.491    20.912    MEM/rs_v1[1][31]_i_69_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    20.965 r  MEM/rs_v1[1][31]_i_125/O
+                         net (fo=3, routed)           0.608    21.573    MEM/rs_v1[1][31]_i_125_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I1_O)        0.053    21.626 r  MEM/rs_v1[1][31]_i_70/O
+                         net (fo=36, routed)          0.174    21.800    MEM/rs_v1[1][31]_i_70_n_0
+    SLICE_X35Y37         LUT6 (Prop_lut6_I4_O)        0.053    21.853 f  MEM/rs_v1[1][31]_i_101/O
+                         net (fo=3, routed)           0.816    22.670    MEM/rs_v1[1][31]_i_101_n_0
+    SLICE_X37Y36         LUT6 (Prop_lut6_I0_O)        0.053    22.723 r  MEM/rs_v1[1][31]_i_66/O
+                         net (fo=77, routed)          0.416    23.139    MEM/rs_v1[1][31]_i_66_n_0
+    SLICE_X37Y37         LUT2 (Prop_lut2_I1_O)        0.053    23.192 r  MEM/rs_v1[1][31]_i_100/O
+                         net (fo=2, routed)           0.522    23.715    MEM/rs_v1[1][31]_i_100_n_0
+    SLICE_X36Y36         LUT6 (Prop_lut6_I5_O)        0.053    23.768 r  MEM/rs_v1[1][31]_i_65/O
+                         net (fo=74, routed)          0.376    24.143    MEM/rs_v1[1][31]_i_65_n_0
+    SLICE_X39Y35         LUT6 (Prop_lut6_I4_O)        0.053    24.196 r  MEM/rs_v1[1][31]_i_108/O
+                         net (fo=1, routed)           0.546    24.742    MEM/rs_v1[1][31]_i_108_n_0
+    SLICE_X39Y36         LUT6 (Prop_lut6_I1_O)        0.053    24.795 r  MEM/rs_v1[1][31]_i_67/O
+                         net (fo=70, routed)          0.438    25.233    MEM/rs_v1[1][31]_i_67_n_0
+    SLICE_X40Y37         LUT5 (Prop_lut5_I3_O)        0.053    25.286 f  MEM/rs_v1[1][31]_i_75/O
+                         net (fo=1, routed)           0.563    25.849    MEM/rs_v1[1][31]_i_75_n_0
+    SLICE_X40Y38         LUT6 (Prop_lut6_I3_O)        0.053    25.902 r  MEM/rs_v1[1][31]_i_37/O
+                         net (fo=37, routed)          1.016    26.919    MEM/rs_v1[1][31]_i_37_n_0
+    SLICE_X30Y49         LUT6 (Prop_lut6_I4_O)        0.053    26.972 r  MEM/rs_v1[1][31]_i_16/O
+                         net (fo=13, routed)          0.294    27.265    MEM/rs_v1[1][31]_i_16_n_0
+    SLICE_X28Y49         LUT6 (Prop_lut6_I2_O)        0.053    27.318 r  MEM/rs_v2[1][31]_i_4/O
+                         net (fo=8, routed)           0.777    28.095    MEM/rs_v2[1][31]_i_4_n_0
+    SLICE_X20Y54         LUT6 (Prop_lut6_I0_O)        0.053    28.148 r  MEM/rs_v2[4][31]_i_2/O
+                         net (fo=1, routed)           0.000    28.148    MEM_n_471
+    SLICE_X20Y54         FDRE                                         r  rs_v2_reg[4][31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=3760, unset)         1.289    11.289    clk
+    SLICE_X20Y54         FDRE                                         r  rs_v2_reg[4][31]/C
+                         clock pessimism              0.010    11.299    
+                         clock uncertainty           -0.035    11.264    
+    SLICE_X20Y54         FDRE (Setup_fdre_C_D)        0.071    11.335    rs_v2_reg[4][31]
+  -------------------------------------------------------------------
+                         required time                         11.335    
+                         arrival time                         -28.148    
+  -------------------------------------------------------------------
+                         slack                                -16.813    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.061ns  (arrival time - required time)
+  Source:                 d_pc_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_pc_reg_0_15_6_11/RAMA/I
+                            (rising edge-triggered cell RAMD32 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.223ns  (logic 0.100ns (44.852%)  route 0.123ns (55.148%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.031ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.749ns
+    Source Clock Delay      (SCD):    0.550ns
+    Clock Pessimism Removal (CPR):    0.168ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.550     0.550    clk
+    SLICE_X13Y61         FDRE                                         r  d_pc_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y61         FDRE (Prop_fdre_C_Q)         0.100     0.650 r  d_pc_reg[6]/Q
+                         net (fo=3, routed)           0.123     0.773    rob_pc_reg_0_15_6_11/DIA0
+    SLICE_X16Y61         RAMD32                                       r  rob_pc_reg_0_15_6_11/RAMA/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.749     0.749    rob_pc_reg_0_15_6_11/WCLK
+    SLICE_X16Y61         RAMD32                                       r  rob_pc_reg_0_15_6_11/RAMA/CLK
+                         clock pessimism             -0.168     0.581    
+    SLICE_X16Y61         RAMD32 (Hold_ramd32_CLK_I)
+                                                      0.131     0.712    rob_pc_reg_0_15_6_11/RAMA
+  -------------------------------------------------------------------
+                         required time                         -0.712    
+                         arrival time                           0.773    
+  -------------------------------------------------------------------
+                         slack                                  0.061    
+
+Slack (MET) :             0.089ns  (arrival time - required time)
+  Source:                 d_pc_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_pc_reg_0_15_0_5/RAMA_D1/I
+                            (rising edge-triggered cell RAMD32 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.211ns  (logic 0.100ns (47.412%)  route 0.111ns (52.588%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.751ns
+    Source Clock Delay      (SCD):    0.551ns
+    Clock Pessimism Removal (CPR):    0.186ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.551     0.551    clk
+    SLICE_X17Y57         FDRE                                         r  d_pc_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y57         FDRE (Prop_fdre_C_Q)         0.100     0.651 r  d_pc_reg[1]/Q
+                         net (fo=3, routed)           0.111     0.762    rob_pc_reg_0_15_0_5/DIA1
+    SLICE_X16Y56         RAMD32                                       r  rob_pc_reg_0_15_0_5/RAMA_D1/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.751     0.751    rob_pc_reg_0_15_0_5/WCLK
+    SLICE_X16Y56         RAMD32                                       r  rob_pc_reg_0_15_0_5/RAMA_D1/CLK
+                         clock pessimism             -0.186     0.565    
+    SLICE_X16Y56         RAMD32 (Hold_ramd32_CLK_I)
+                                                      0.108     0.673    rob_pc_reg_0_15_0_5/RAMA_D1
+  -------------------------------------------------------------------
+                         required time                         -0.673    
+                         arrival time                           0.762    
+  -------------------------------------------------------------------
+                         slack                                  0.089    
+
+Slack (MET) :             0.093ns  (arrival time - required time)
+  Source:                 d_insn_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_insn_reg_0_15_30_31/RAMB/I
+                            (rising edge-triggered cell RAMD32 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.406ns  (logic 0.100ns (24.635%)  route 0.306ns (75.365%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.181ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.738ns
+    Source Clock Delay      (SCD):    0.549ns
+    Clock Pessimism Removal (CPR):    0.008ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.549     0.549    clk
+    SLICE_X23Y58         FDRE                                         r  d_insn_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y58         FDRE (Prop_fdre_C_Q)         0.100     0.649 r  d_insn_reg[14]/Q
+                         net (fo=10, routed)          0.306     0.955    rob_insn_reg_0_15_30_31/DIB0
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMB/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.738     0.738    rob_insn_reg_0_15_30_31/WCLK
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMB/CLK
+                         clock pessimism             -0.008     0.730    
+    SLICE_X38Y57         RAMD32 (Hold_ramd32_CLK_I)
+                                                      0.132     0.862    rob_insn_reg_0_15_30_31/RAMB
+  -------------------------------------------------------------------
+                         required time                         -0.862    
+                         arrival time                           0.955    
+  -------------------------------------------------------------------
+                         slack                                  0.093    
+
+Slack (MET) :             0.095ns  (arrival time - required time)
+  Source:                 tail_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_insn_reg_0_15_30_31/RAMA/WADR1
+                            (rising edge-triggered cell RAMD32 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.091ns (25.029%)  route 0.273ns (74.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.738ns
+    Source Clock Delay      (SCD):    0.538ns
+    Clock Pessimism Removal (CPR):    0.187ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.538     0.538    clk
+    SLICE_X36Y58         FDRE                                         r  tail_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y58         FDRE (Prop_fdre_C_Q)         0.091     0.629 r  tail_reg[1]/Q
+                         net (fo=50, routed)          0.273     0.902    rob_insn_reg_0_15_30_31/ADDRD1
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMA/WADR1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.738     0.738    rob_insn_reg_0_15_30_31/WCLK
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMA/CLK
+                         clock pessimism             -0.187     0.551    
+    SLICE_X38Y57         RAMD32 (Hold_ramd32_CLK_WADR1)
+                                                      0.256     0.807    rob_insn_reg_0_15_30_31/RAMA
+  -------------------------------------------------------------------
+                         required time                         -0.807    
+                         arrival time                           0.902    
+  -------------------------------------------------------------------
+                         slack                                  0.095    
+
+Slack (MET) :             0.095ns  (arrival time - required time)
+  Source:                 tail_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_insn_reg_0_15_30_31/RAMA_D1/WADR1
+                            (rising edge-triggered cell RAMD32 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.091ns (25.029%)  route 0.273ns (74.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.738ns
+    Source Clock Delay      (SCD):    0.538ns
+    Clock Pessimism Removal (CPR):    0.187ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.538     0.538    clk
+    SLICE_X36Y58         FDRE                                         r  tail_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y58         FDRE (Prop_fdre_C_Q)         0.091     0.629 r  tail_reg[1]/Q
+                         net (fo=50, routed)          0.273     0.902    rob_insn_reg_0_15_30_31/ADDRD1
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMA_D1/WADR1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.738     0.738    rob_insn_reg_0_15_30_31/WCLK
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMA_D1/CLK
+                         clock pessimism             -0.187     0.551    
+    SLICE_X38Y57         RAMD32 (Hold_ramd32_CLK_WADR1)
+                                                      0.256     0.807    rob_insn_reg_0_15_30_31/RAMA_D1
+  -------------------------------------------------------------------
+                         required time                         -0.807    
+                         arrival time                           0.902    
+  -------------------------------------------------------------------
+                         slack                                  0.095    
+
+Slack (MET) :             0.095ns  (arrival time - required time)
+  Source:                 tail_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_insn_reg_0_15_30_31/RAMB/WADR1
+                            (rising edge-triggered cell RAMD32 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.091ns (25.029%)  route 0.273ns (74.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.738ns
+    Source Clock Delay      (SCD):    0.538ns
+    Clock Pessimism Removal (CPR):    0.187ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.538     0.538    clk
+    SLICE_X36Y58         FDRE                                         r  tail_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y58         FDRE (Prop_fdre_C_Q)         0.091     0.629 r  tail_reg[1]/Q
+                         net (fo=50, routed)          0.273     0.902    rob_insn_reg_0_15_30_31/ADDRD1
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMB/WADR1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.738     0.738    rob_insn_reg_0_15_30_31/WCLK
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMB/CLK
+                         clock pessimism             -0.187     0.551    
+    SLICE_X38Y57         RAMD32 (Hold_ramd32_CLK_WADR1)
+                                                      0.256     0.807    rob_insn_reg_0_15_30_31/RAMB
+  -------------------------------------------------------------------
+                         required time                         -0.807    
+                         arrival time                           0.902    
+  -------------------------------------------------------------------
+                         slack                                  0.095    
+
+Slack (MET) :             0.095ns  (arrival time - required time)
+  Source:                 tail_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_insn_reg_0_15_30_31/RAMB_D1/WADR1
+                            (rising edge-triggered cell RAMD32 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.091ns (25.029%)  route 0.273ns (74.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.738ns
+    Source Clock Delay      (SCD):    0.538ns
+    Clock Pessimism Removal (CPR):    0.187ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.538     0.538    clk
+    SLICE_X36Y58         FDRE                                         r  tail_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y58         FDRE (Prop_fdre_C_Q)         0.091     0.629 r  tail_reg[1]/Q
+                         net (fo=50, routed)          0.273     0.902    rob_insn_reg_0_15_30_31/ADDRD1
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMB_D1/WADR1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.738     0.738    rob_insn_reg_0_15_30_31/WCLK
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMB_D1/CLK
+                         clock pessimism             -0.187     0.551    
+    SLICE_X38Y57         RAMD32 (Hold_ramd32_CLK_WADR1)
+                                                      0.256     0.807    rob_insn_reg_0_15_30_31/RAMB_D1
+  -------------------------------------------------------------------
+                         required time                         -0.807    
+                         arrival time                           0.902    
+  -------------------------------------------------------------------
+                         slack                                  0.095    
+
+Slack (MET) :             0.095ns  (arrival time - required time)
+  Source:                 tail_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_insn_reg_0_15_30_31/RAMC/WADR1
+                            (rising edge-triggered cell RAMD32 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.091ns (25.029%)  route 0.273ns (74.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.738ns
+    Source Clock Delay      (SCD):    0.538ns
+    Clock Pessimism Removal (CPR):    0.187ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.538     0.538    clk
+    SLICE_X36Y58         FDRE                                         r  tail_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y58         FDRE (Prop_fdre_C_Q)         0.091     0.629 r  tail_reg[1]/Q
+                         net (fo=50, routed)          0.273     0.902    rob_insn_reg_0_15_30_31/ADDRD1
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMC/WADR1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.738     0.738    rob_insn_reg_0_15_30_31/WCLK
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMC/CLK
+                         clock pessimism             -0.187     0.551    
+    SLICE_X38Y57         RAMD32 (Hold_ramd32_CLK_WADR1)
+                                                      0.256     0.807    rob_insn_reg_0_15_30_31/RAMC
+  -------------------------------------------------------------------
+                         required time                         -0.807    
+                         arrival time                           0.902    
+  -------------------------------------------------------------------
+                         slack                                  0.095    
+
+Slack (MET) :             0.095ns  (arrival time - required time)
+  Source:                 tail_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_insn_reg_0_15_30_31/RAMC_D1/WADR1
+                            (rising edge-triggered cell RAMD32 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.091ns (25.029%)  route 0.273ns (74.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.738ns
+    Source Clock Delay      (SCD):    0.538ns
+    Clock Pessimism Removal (CPR):    0.187ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.538     0.538    clk
+    SLICE_X36Y58         FDRE                                         r  tail_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y58         FDRE (Prop_fdre_C_Q)         0.091     0.629 r  tail_reg[1]/Q
+                         net (fo=50, routed)          0.273     0.902    rob_insn_reg_0_15_30_31/ADDRD1
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMC_D1/WADR1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.738     0.738    rob_insn_reg_0_15_30_31/WCLK
+    SLICE_X38Y57         RAMD32                                       r  rob_insn_reg_0_15_30_31/RAMC_D1/CLK
+                         clock pessimism             -0.187     0.551    
+    SLICE_X38Y57         RAMD32 (Hold_ramd32_CLK_WADR1)
+                                                      0.256     0.807    rob_insn_reg_0_15_30_31/RAMC_D1
+  -------------------------------------------------------------------
+                         required time                         -0.807    
+                         arrival time                           0.902    
+  -------------------------------------------------------------------
+                         slack                                  0.095    
+
+Slack (MET) :             0.095ns  (arrival time - required time)
+  Source:                 tail_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rob_insn_reg_0_15_30_31/RAMD/ADR1
+                            (rising edge-triggered cell RAMS32 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.091ns (25.029%)  route 0.273ns (74.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.738ns
+    Source Clock Delay      (SCD):    0.538ns
+    Clock Pessimism Removal (CPR):    0.187ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.538     0.538    clk
+    SLICE_X36Y58         FDRE                                         r  tail_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y58         FDRE (Prop_fdre_C_Q)         0.091     0.629 r  tail_reg[1]/Q
+                         net (fo=50, routed)          0.273     0.902    rob_insn_reg_0_15_30_31/ADDRD1
+    SLICE_X38Y57         RAMS32                                       r  rob_insn_reg_0_15_30_31/RAMD/ADR1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=3760, unset)         0.738     0.738    rob_insn_reg_0_15_30_31/WCLK
+    SLICE_X38Y57         RAMS32                                       r  rob_insn_reg_0_15_30_31/RAMD/CLK
+                         clock pessimism             -0.187     0.551    
+    SLICE_X38Y57         RAMS32 (Hold_rams32_CLK_ADR1)
+                                                      0.256     0.807    rob_insn_reg_0_15_30_31/RAMD
+  -------------------------------------------------------------------
+                         required time                         -0.807    
+                         arrival time                           0.902    
+  -------------------------------------------------------------------
+                         slack                                  0.095    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin     Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     FDRE/C      n/a            0.750         10.000      9.250      SLICE_X19Y24  count_reg[4]/C
+Min Period        n/a     FDRE/C      n/a            0.750         10.000      9.250      SLICE_X23Y59  d_insn_reg[22]/C
+Min Period        n/a     FDRE/C      n/a            0.750         10.000      9.250      SLICE_X23Y59  d_insn_reg[23]/C
+Min Period        n/a     FDRE/C      n/a            0.750         10.000      9.250      SLICE_X23Y58  d_insn_reg[26]/C
+Min Period        n/a     FDRE/C      n/a            0.750         10.000      9.250      SLICE_X23Y58  d_insn_reg[4]/C
+Min Period        n/a     FDRE/C      n/a            0.750         10.000      9.250      SLICE_X23Y60  d_insn_reg[6]/C
+Min Period        n/a     FDRE/C      n/a            0.750         10.000      9.250      SLICE_X16Y57  d_pc_reg[2]/C
+Min Period        n/a     FDRE/C      n/a            0.750         10.000      9.250      SLICE_X33Y24  rob_st_addr_reg[12][7]/C
+Min Period        n/a     FDRE/C      n/a            0.750         10.000      9.250      SLICE_X33Y25  rob_st_addr_reg[13][5]/C
+Min Period        n/a     FDRE/C      n/a            0.750         10.000      9.250      SLICE_X33Y25  rob_st_addr_reg[13][6]/C
+Low Pulse Width   Slow    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X16Y52  BP/g_bp.btb_jump_reg_0_15_0_0/DP/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X16Y52  BP/g_bp.btb_jump_reg_0_15_0_0/DP/CLK
+Low Pulse Width   Slow    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X16Y52  BP/g_bp.btb_jump_reg_0_15_0_0/SP/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X16Y52  BP/g_bp.btb_jump_reg_0_15_0_0/SP/CLK
+Low Pulse Width   Slow    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMA/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMA/CLK
+Low Pulse Width   Slow    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMA_D1/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMA_D1/CLK
+Low Pulse Width   Slow    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMB/CLK
+Low Pulse Width   Fast    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMB/CLK
+High Pulse Width  Slow    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X16Y52  BP/g_bp.btb_jump_reg_0_15_0_0/DP/CLK
+High Pulse Width  Fast    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X16Y52  BP/g_bp.btb_jump_reg_0_15_0_0/DP/CLK
+High Pulse Width  Slow    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X16Y52  BP/g_bp.btb_jump_reg_0_15_0_0/SP/CLK
+High Pulse Width  Fast    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X16Y52  BP/g_bp.btb_jump_reg_0_15_0_0/SP/CLK
+High Pulse Width  Slow    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMA/CLK
+High Pulse Width  Fast    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMA_D1/CLK
+High Pulse Width  Fast    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMA_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMB/CLK
+High Pulse Width  Fast    RAMD32/CLK  n/a            0.910         5.000       4.090      SLICE_X10Y52  BP/g_bp.btb_target_reg_0_15_0_5/RAMB/CLK
+
+
+

@@ -1,0 +1,7 @@
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'Cout' was assigned but not read. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'DRselect_D' was assigned but not read. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'load_in_M' was assigned but not read. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'overflowFlag_E' was assigned but not read. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'zeroFlag_E' was assigned but not read. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'upd_target' are not read. First unread bit index is 8. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'clk' are not read. First unread bit index is 0. 

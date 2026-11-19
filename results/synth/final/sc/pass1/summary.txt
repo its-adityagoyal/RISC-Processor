@@ -1,0 +1,1 @@
+SYNTH top=RISCV_processor period=10.000 wns=-4.152 slack_rr=3.135 slack_rf=-4.152 slack_fr=-0.765 slack_ff=1.612 tmin=18.304 fmax_mhz=54.6 critical=rise-fall luts=1160 ffs=545 lutram=128 bram=0

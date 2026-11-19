@@ -1,0 +1,6 @@
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'Cout' was assigned but not read. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'g_bp.ghr_ext' was assigned but not read. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'upd_target' are not read. First unread bit index is 8. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'clk' are not read. First unread bit index is 0. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'alu_ovf' was assigned but not read. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'alu_zero' was assigned but not read. 

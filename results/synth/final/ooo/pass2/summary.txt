@@ -1,0 +1,1 @@
+SYNTH top=ooo_processor period=26.518 wns=-2.364 slack_rr=-2.364 slack_rf=2.249 slack_fr=8.347 slack_ff= tmin=28.882 fmax_mhz=34.6 critical=rise-rise luts=6972 ffs=3021 lutram=298 bram=0

@@ -1,0 +1,5 @@
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'Cout' was assigned but not read. 
+WARNING: [Synth 37-78] [ASSIGN-1]Input operands(of sizes 32 32) of add/sub cluster ending with expression '(read_data1[7:0] + immediate_extension[7:0])' could yield maximum size of 33, but only width of 8 is being used.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'overflowFlag' was assigned but not read. 
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'zeroFlag' was assigned but not read. 
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'clk' are not read. First unread bit index is 0. 

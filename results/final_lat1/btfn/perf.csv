@@ -1,0 +1,12 @@
+test,result,cycles,retired,cpi,branches,taken,jumps,load_use_stalls,flushes,mispredicts,jump_redirects,pred_taken_ok
+orig_bubble5,PASS,185,157,1.1783,29,5,14,10,7,5,2,12
+orig_insertion10,PASS,649,576,1.1267,109,10,54,45,12,10,2,52
+bench_crc32,PASS,7894,6600,1.1961,2208,1504,0,0,645,645,0,1020
+bench_bitcount,PASS,11796,11544,1.0218,2355,143,2211,48,100,98,2,2255
+bench_matmult,PASS,28198,23898,1.1799,6920,2279,2912,512,1892,1891,1,3364
+bench_bsearch,PASS,2491,2068,1.2045,575,146,165,181,119,117,2,193
+bench_sieve,PASS,4360,3636,1.1991,927,239,636,238,241,239,2,634
+bench_insertion10,PASS,629,556,1.1313,109,10,54,45,12,10,2,52
+bench_bubble5,PASS,175,147,1.1905,29,5,14,10,7,5,2,12
+bench_insertion32,PASS,3472,3106,1.1178,625,32,299,294,34,32,2,297
+bench_bubble32,PASS,6277,5213,1.2041,1055,280,527,496,282,280,2,525

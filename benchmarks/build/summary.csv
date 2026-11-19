@@ -1,0 +1,10 @@
+benchmark,kernel,static_insns,dynamic_insns,cond_branches,taken,taken_pct,jumps,loads,stores,iss_check
+crc32,crc32,26,6600,2208,1504,68.1,0,32,1,ok
+bitcount,bitcount,27,11544,2355,143,6.1,2211,48,3,ok
+matmult,matmult,30,23898,6920,2279,32.9,2912,1024,64,ok
+bsearch,bsearch,23,2068,575,146,25.4,165,213,32,ok
+sieve,sieve,19,3636,927,239,25.8,636,238,400,ok
+insertion10,insertion,23,556,109,10,9.2,54,54,54,ok
+bubble5,bubble,20,147,29,5,17.2,14,20,20,ok
+insertion32,insertion,23,3106,625,32,5.1,299,325,299,ok
+bubble32,bubble,20,5213,1055,280,26.5,527,992,496,ok
